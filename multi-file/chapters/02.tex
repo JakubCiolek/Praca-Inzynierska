@@ -1,11 +1,5 @@
 \chapter{Modele symulacji rozprzestrzeniania się zarażeń}
 
-\begin{itemize}
-\item sformułowanie problemu
-\item osadzenie tematu w kontekście aktualnego stanu wiedzy (\english{state of the art}) o poruszanym problemie
-\item  studia literaturowe \cite{bib:artykul,bib:ksiazka,bib:konferencja,bib:internet} -  opis znanych rozwiązań (także opisanych naukowo, jeżeli problem jest poruszany w publikacjach naukowych), algorytmów, 
-\end{itemize}
-
 Aby skutecznie symulować rozprzestrzenianie się zarażeń, konieczne jest w pierwszej kolejności zrozumienie mechanizmów, które kierują postępującą zarazą. Początek naszej pracy powinien poprzedzić dogłębne zbadanie natury patogenu, jego zdolności i ograniczeń wynikających z procesów selekcji naturalnej. Wirus, aby przetrwać, musi zdolnością zarażania przewyższać zdolność zabijania, co sprowadza się do utrzymania współczynnika rozprzestrzeniania większego niż 1. Dodatkowo, uwzględnienie okresu inkubacji jest kluczowe, ponieważ wirus potrzebuje czasu na rozmnożenie się w organizmie nosiciela.
 
 Jednakże, natura patogenu to tylko jeden z elementów, na które należy zwrócić uwagę w kontekście symulacji. Równie istotnym aspektem jest człowiek jako ofiara. Analiza funkcjonowania współczesnego społeczeństwa pomoże nam określić skalę, na jaką może rozprzestrzeniać się zaraza. Zrozumienie tego kontekstu umożliwi nam lepsze odzwierciedlenie rzeczywistości w modelowaniu.
@@ -14,16 +8,17 @@ Zebraną wiedzę należy następnie przełożyć na język matematyki i modelowa
 
 Mimo wcześniejszych prób i starań badaczy nad zjawiskiem rozprzestrzeniania się patogenów, znaczące postępy i wzmożone zainteresowanie tematem pojawiły się dopiero w latach 20. ubiegłego wieku. Świat po I wojnie światowej stanął przed pandemią grypy hiszpanki, która zarażając 1/3 ówczesnej populacji i powodując więcej ofiar niż dopiero co zakończony globalny konflikt zbrojny, spowodowała pilną potrzebę zrozumienia i kontrolowania takich masowych zjawisk. W okresie tym, w odpowiedzi na potrzebę zrozumienia dynamiki pandemii grypy hiszpanki, powstał jeden z pierwszych matematycznych modeli symulacyjnych dotyczących rozprzestrzeniania się chorób zakaźnych, znany jako model SIR (podatni-zainfekowani-ozdrowieńcy). Model ten, opracowany w tamtych latach, stał się punktem wyjścia dla wielu kolejnych prac nad matematycznym modelowaniem epidemii, ukazując potencjał tego podejścia do zrozumienia i przewidywania rozprzestrzeniania się patogenów w społeczeństwie.
 
-\subsection{\textbf{Modele bazujące na SIR}}
+\section{\textbf{Modele bazujące na SIR}}
 
-We współczesnych badaniach często rozwija się model SIR tak aby mógł lepiej dokładniej odzwierciedlać rozprzestrzenianie się choroby. Takimi modyfikacjami najczęściej są dalsze podzielenie populacji na grupy czy dodanie dodatkowych czynników wpływających na zarazę. Jednym z takich modeli jest \textit {K-SEIR} opisany w artykule \textit {,,K-SEIR-Sim: A simple customized software for simulating the spread of infectious diseases.''} 
+We współczesnych badaniach często rozwija się model SIR tak aby mógł lepiej dokładniej odzwierciedlać rozprzestrzenianie się choroby. Takimi modyfikacjami najczęściej są dalsze podzielenie populacji na grupy czy dodanie dodatkowych czynników wpływających na zarazę. Jednym z takich modeli jest \textit {K-SEIR} opisany w artykule \textit {,,K-SEIR-Sim: A simple customized software for simulating the spread of infectious diseases.''
+\cite{bib:artykul}} 
 
 We wspomnianym artykule zaproponowany model rozszerza oryginalny SIR o dodatkową grupę \textit { E - Exposed (narażeni)} oraz dodaje czynnik \textit {K}, który określa działania przeciwdziałające zarazie podejmowane przez ludzi. Na podstawie modelu, dodatkowych parametrów oraz danych epidemiologicznych Covid-19 z miasta Wuhan zostały opracowane równania do matematycznego modelowania postępu rozprzestrzeniania się choroby, które autorzy przedstawili w tabeli.
 
-\begin{table}[h]
+\begin{table}[h!]
 
 	\centering
-	\caption{Opis modelu epidemiologicznego K-SEIR.}
+	\caption{Opis modelu epidemiologicznego  \textit {K-SEIR}.}
 	\label{tab:model_epidemiologiczny}
 	\begin{tabular}{|p{3cm}|p{7cm}|p{5cm}|}
 		\hline
@@ -60,12 +55,56 @@ We wspomnianym artykule zaproponowany model rozszerza oryginalny SIR o dodatkow�
 	\end{tabular}
 \end{table}
 
-Wzory  
-\begin{align}
-y = \frac{\partial x}{\partial t}
-\end{align}
-jak i pojedyncze symbole $x$ i $y$  składa się w trybie matematycznym.
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{kseirscheme.png}
+	\caption{Schemat działania modelu  \textit {K-SEIR}}
+	\label{fig:}
+\end{figure}
 
+Teoretyczny model K-SEIR został przekształcony w prosty oprogramowanie, zaimplementowane w języku PYTHON, przy użyciu inżynierii oprogramowania. W szczególności, ukończono zadania związane z projektowaniem interfejsu graficznego użytkownika, logiką sterowania, logiką operacji, kontrolą precyzji, kontrolą prędkości, wizualizacją danych, importem i eksportem danych, dopasowaniem parametrów, wyświetlaniem kluczowych danych oraz innymi konkretnymi treściami.
+\newpage
+\section{\textbf{Modele agentowe}}
+
+Modele agentowe stanowią komputerowe symulacje, w których agenci, reprezentujący różne jednostki, mogą wejść w interakcję między sobą. Agentami mogą być jednostki takie jak osoby, organizacje, a nawet obszary geograficzne, takie jak województwa czy kraje. Wzajemne oddziaływania między agentami są określone przez zdefiniowane zasady programowe. Każdy z agentów podejmuje decyzje indywidualnie, co może obejmować zarówno proste wybory, na przykład decyzję o kierunku ruchu, jak i bardziej złożone decyzje, takie jak znalezienie konkretnego innego agenta lub sekwencję zdarzeń. W kontekście symulacji zarażeń, tego typu podejście pozwala na realistyczne uwzględnienie nieprzewidywalnych decyzji, jakie może podjąć jednostka.
+
+Jednym z artykułów naukowych, poruszających temat modelowania agentowego pod tytułem: \textit{,,An open-data-driven agent-based model to simulate infectious disease outbreaks''} \cite{bib:artykul1} dostarczy nam cennych informacji na  temat implementacji takich rozwiązań. 
+
+W artykule możemy przeczytać szczegółowe informacje na temat tego co badacze wzięli po uwagę podczas tworzenia swojego modelu.
+był on oparty o dane populacji, umiejscowienia szkół i miejsc pracy a także danych dotyczących szczepień. Rzeczywiste dane są używane do określenia struktury wiekowej i płciowej naszych populacji, wraz z właściwym rozkładem wielkości gospodarstw domowych oraz innymi cechami takimi jak wiek dzieci. Następnie dane opisujące lokalizację szkół oraz miejsc pracy dają możliwość wiernego odwzorowania interakcji pomiędzy ludźmi. Na koniec aby ocenić podatność populacji na rozprzestrzenianie się choroby uwzględniono ilość szczepień (badanie opierało się na badaniu epidemii odry).
+Następnym krokiem badaczy było wybranie testowanego obszaru i podzielenie go na mniejsze jednostki, w których przebywający ludzie są uznawani za mający kontakt ze sobą. Później należało rozmieścić agentów w odpowiednich domach według danych o populacji. Na koniec należało uwzględnić dodatkowe czynniki między innymi transport. 
+Ostatnim krokiem było matematyczne opisane szans na zarażeniem, w tym celu autorzy wykorzystali równanie:
+
+\begin{center}
+$R_0 = cpd$
+\end{center}
+
+gdzie:\\
+$R_0$ - prawdopodobieństwo infekcji. \\
+$c$ - liczba kontaktów na jednostkę czasu. \\
+$p$ - szansa na zarażenie podczas kontaktu. \\
+$d$ - długość trwania infekcji \\
+
+Poprzez przekształcenie równania otrzymano: 
+\begin{center}
+$ p = \frac{R_0}{cd} $
+\end{center}
+
+Dodatkowo w scenariuszach testowych, w których brano pod uwagę szczepienia użyto dodatkowego równania. Jest ono oparte na odporność zbiorowej jednak zmodyfikowane aby uwzględniać skuteczność szczepionki:
+
+\begin{center}
+	$V_c = \frac{(1-\frac{1}{R_0})}{V_e}$
+\end{center}
+
+gdzie:\\
+$V_c$ - objęcie szczepieniami populacji \\
+$V_e$ - skuteczność szczepionki. \\
+
+Badacze przetestowali swój program na wielu miastach w Irlandii, ze względu na dostępne dane co do ich struktury oraz populacji.
+Dodatkowo model został porównany z rzeczywistymi danych dotyczącymi epidemii odry w Schull, Irlandia w 2012 roku. Ze względu na losowość w modelu efekty każdej z symulacji było nieco inne. 
+
+cyt. \textit{,, (...) Średnia liczba zainfekowanych agentów w różnych próbach wyniosła 17, przy maksymalnej liczbie 90 zainfekowanych agentów w jednym przypadku. Dwadzieścia pięć procent prób skończyło się wybuchem, w którym więcej niż 30 agentów zostało zainfekowanych. Wyniki pokazują, że chociaż średnia dla wszystkich prób jest niższa niż liczba zainfekowanych w przypadku wybuchu w Schull, to liczba faktycznie zainfekowanych osób znajduje się w 75. centylu wyników modelu.'' (...)}\cite{bib:artykul1}
+
+Podsumowując, przewagą modeli agentowych nad modelami takimi jak SEIR jest uwzględnienie decyzji jednostki, przykładowo jeżeli mimo choroby osoba zdecyduje się pójść do szkoły lub pracy, ilość zarażeń wzrośnie lub odwrotnie jeżeli zdecyduje się zostać w domu, ilość zarażeń zmaleje, takie niuanse są wychwytywane dzięki skupieniu się na jednostce. Niestety takie podejście dużo gorzej radzi sobie w miarę zwiększania populacji, dlatego idealnie nadają się do symulacja epidemii w małych miastach ale nie w obrębie całego kraju lub świata.
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 
