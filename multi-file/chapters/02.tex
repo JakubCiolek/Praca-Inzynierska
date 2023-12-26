@@ -1,4 +1,4 @@
-\chapter{[Analiza tematu]}
+\chapter{Modele symulacji rozprzestrzeniania się zarażeń}
 
 \begin{itemize}
 \item sformułowanie problemu
@@ -6,6 +6,59 @@
 \item  studia literaturowe \cite{bib:artykul,bib:ksiazka,bib:konferencja,bib:internet} -  opis znanych rozwiązań (także opisanych naukowo, jeżeli problem jest poruszany w publikacjach naukowych), algorytmów, 
 \end{itemize}
 
+Aby skutecznie symulować rozprzestrzenianie się zarażeń, konieczne jest w pierwszej kolejności zrozumienie mechanizmów, które kierują postępującą zarazą. Początek naszej pracy powinien poprzedzić dogłębne zbadanie natury patogenu, jego zdolności i ograniczeń wynikających z procesów selekcji naturalnej. Wirus, aby przetrwać, musi zdolnością zarażania przewyższać zdolność zabijania, co sprowadza się do utrzymania współczynnika rozprzestrzeniania większego niż 1. Dodatkowo, uwzględnienie okresu inkubacji jest kluczowe, ponieważ wirus potrzebuje czasu na rozmnożenie się w organizmie nosiciela.
+
+Jednakże, natura patogenu to tylko jeden z elementów, na które należy zwrócić uwagę w kontekście symulacji. Równie istotnym aspektem jest człowiek jako ofiara. Analiza funkcjonowania współczesnego społeczeństwa pomoże nam określić skalę, na jaką może rozprzestrzeniać się zaraza. Zrozumienie tego kontekstu umożliwi nam lepsze odzwierciedlenie rzeczywistości w modelowaniu.
+
+Zebraną wiedzę należy następnie przełożyć na język matematyki i modelować ją komputerowo. W tym procesie istotne jest zidentyfikowanie obszarów, które mogą być uproszczone, oraz tych, które wymagają szczegółowego odwzorowania, aby osiągnąć postawione cele symulacji. W ten sposób, połączenie wiedzy o patogenie i społeczeństwie, przełożone na modele matematyczne, pozwoli nam skutecznie symulować i analizować procesy rozprzestrzeniania się zarażeń. 
+
+Mimo wcześniejszych prób i starań badaczy nad zjawiskiem rozprzestrzeniania się patogenów, znaczące postępy i wzmożone zainteresowanie tematem pojawiły się dopiero w latach 20. ubiegłego wieku. Świat po I wojnie światowej stanął przed pandemią grypy hiszpanki, która zarażając 1/3 ówczesnej populacji i powodując więcej ofiar niż dopiero co zakończony globalny konflikt zbrojny, spowodowała pilną potrzebę zrozumienia i kontrolowania takich masowych zjawisk. W okresie tym, w odpowiedzi na potrzebę zrozumienia dynamiki pandemii grypy hiszpanki, powstał jeden z pierwszych matematycznych modeli symulacyjnych dotyczących rozprzestrzeniania się chorób zakaźnych, znany jako model SIR (podatni-zainfekowani-ozdrowieńcy). Model ten, opracowany w tamtych latach, stał się punktem wyjścia dla wielu kolejnych prac nad matematycznym modelowaniem epidemii, ukazując potencjał tego podejścia do zrozumienia i przewidywania rozprzestrzeniania się patogenów w społeczeństwie.
+
+\subsection{\textbf{Modele bazujące na SIR}}
+
+We współczesnych badaniach często rozwija się model SIR tak aby mógł lepiej dokładniej odzwierciedlać rozprzestrzenianie się choroby. Takimi modyfikacjami najczęściej są dalsze podzielenie populacji na grupy czy dodanie dodatkowych czynników wpływających na zarazę. Jednym z takich modeli jest \textit {K-SEIR} opisany w artykule \textit {,,K-SEIR-Sim: A simple customized software for simulating the spread of infectious diseases.''} 
+
+We wspomnianym artykule zaproponowany model rozszerza oryginalny SIR o dodatkową grupę \textit { E - Exposed (narażeni)} oraz dodaje czynnik \textit {K}, który określa działania przeciwdziałające zarazie podejmowane przez ludzi. Na podstawie modelu, dodatkowych parametrów oraz danych epidemiologicznych Covid-19 z miasta Wuhan zostały opracowane równania do matematycznego modelowania postępu rozprzestrzeniania się choroby, które autorzy przedstawili w tabeli.
+
+\begin{table}[h]
+
+	\centering
+	\caption{Opis modelu epidemiologicznego K-SEIR.}
+	\label{tab:model_epidemiologiczny}
+	\begin{tabular}{|p{3cm}|p{7cm}|p{5cm}|}
+		\hline
+		\textbf{Populacja} & \textbf{Równanie} & \textbf{Parametry} \\
+		\hline
+		Podatni (S) & $\frac{ds}{dt} = -\frac{\lambda si}{N} + \mu h$ & $\lambda$: średnia dzienna ilość zarażeń \\
+		& & $s$: liczba populacji (S) w czasie $t$ \\
+		& & $i$: liczba populacji (I) w czasie $t$ \\
+		& & $\mu$: średnia dzienna ilość ponownych zarażeń \\
+		& & $h$: liczba populacji (H) w czasie $t$ \\
+		& & $N$: liczba całkowitej populacji w danym regionie \\
+		\hline
+		Narażeni (E) & $\frac{de}{dt} = \frac{\lambda si}{N} - \sigma e$ & $\sigma$: wskaźnik zachorowań na dzień \\
+		& & $e$: liczba populacji (E) w czasie $t$ \\
+		\hline
+		Zarażeni (I) & $\frac{di}{dt} = \sigma e - \gamma i$ & $\gamma$: średni dzienny współczynnik zmniejszania grupy zarażonych pacjentów \\
+		\hline
+		Usunięci (R) & $\frac{dr}{dt} = \gamma i$ & Suma wyleczonych i zmarłych \\
+		\hline
+		Ozdrowieńcy (H) & $h = \alpha r$ & $r$: liczba populacji (R) w czasie $t$ \\
+		& & $\alpha$: średnia dzienna współczynnik zdrowienia \\
+		\hline
+		Zmarli (D) & $d = \beta r$ & $\beta$: średnia dzienny współczynnik śmiertelności \\
+		\cline{2-3}
+		& $\alpha + \beta = \gamma$ & \\
+		\cline{2-3}
+		& $s_0 + e_0 + i_0 + r_0 = N \quad \text{(dla } t = 0)$ & 0: czas t = 0 \\
+		\cline{2-3}
+		& $\lambda_k = (1 - k_1) \lambda$ & K: współczynnik interwencji ludzkiej \\
+		& $\gamma_k = k_2 \gamma$ & $k_1$: miara izolacji fizycznej, współczynnik $\lambda$ \\
+		& $\alpha_k = k_3 \alpha$ & $k_2$: zdolność przyjęcia do szpitala, współczynnik $\gamma$ \\
+								  & &	$k_3$: zdolność leczenia, współczynnik $\alpha$ \\
+		\hline
+	\end{tabular}
+\end{table}
 
 Wzory  
 \begin{align}
