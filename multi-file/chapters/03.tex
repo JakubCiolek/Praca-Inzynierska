@@ -1,9 +1,141 @@
 \chapter{Wymagania i narzędzia}
 \label{ch:wymagania-i-narzedzia}
+%\begin{itemize}
+%	\item wymagania funkcjonalne i niefunkcjonalne
+%	\item przypadki użycia (diagramy UML) -- dla prac, w których mają zastosowanie
+%	\item opis narzędzi, metod eksperymentalnych, metod modelowania itp.
+%	\item metodyka pracy nad projektowaniem i implementacją -- dla prac, w których ma to zastosowanie
+%\end{itemize}
+Rozdział skupi się na omówieniu kluczowych aspektów dotyczących aplikacji do symulowania rozprzestrzeniania się zarażeń o nazwie \textit{InfektoSym}. Rozpocznie od analizy i przedstawienia wymagań funkcjonalnych oraz niefunkcjonalnych. Następnie przybliży technologie wykorzystane w aplikacji. Dodatkowo, dokładnie wyjaśni działanie zaimplementowanego modelu symulacji rozprzestrzeniania się choroby, a także w jaki sposób aplikacja oddziałuje z użytkownikiem i jakie rezultaty może dostarczyć. Ten rozdział stanowi istotne wprowadzenie do zrozumienia zarówno technicznego, jak i funkcjonalnego aspektu projektu.
 
+\section{\textbf{Wymagania funkcjonalne i niefunkcjonalne}}
+\subsection{\textbf{Wymagania funkcjonalne}}
 \begin{itemize}
-\item wymagania funkcjonalne i niefunkcjonalne
-\item przypadki użycia (diagramy UML) -- dla prac, w których mają zastosowanie
-\item opis narzędzi, metod eksperymentalnych, metod modelowania itp.
-\item metodyka pracy nad projektowaniem i implementacją -- dla prac, w których ma to zastosowanie
+	\item \textbf{ Symulacja Ruchu i Interakcji:}
+	
+	Aplikacja pozwala na śledzenie trajektorii ruchu każdej postaci w biurze w czasie rzeczywistym.
+	Interakcje pomiędzy postaciami są symulowane z uwzględnieniem różnych scenariuszy, takich jak rozmowy, wspólna praca, czy przerwy.
+	W momencie, gdy jedna postać zostaje zarażona, aplikacja monitoruje, czy i jak szybko choroba rozprzestrzenia się na inne postacie poprzez ich bezpośrednie kontakty.
+	\item \textbf{Wizualizacja Stanów Zdrowia:}
+	
+	Na ekranie widoczne są dynamiczne wskaźniki zdrowia każdej postaci, pozwalające użytkownikowi śledzić ich aktualny stan (zdrowy, narażony, zarażony).
+	Symulacja obejmuje także wizualizację okresów inkubacji oraz wyzdrowienia, umożliwiając obserwację zmian stanów zdrowia w czasie rzeczywistym.
+	\item \textbf{Monitorowanie Kontaktów i Narażenia:}
+	
+	Aplikacja zbiera dane dotyczące kontaktów pomiędzy postaciami, identyfikując te, które mogą prowadzić do potencjalnego zarażenia.
+	Wizualizacja narażeń obejmuje różne aspekty, takie jak dystans, czas trwania kontaktu oraz ewentualne zastosowane środki ochrony osobistej.
+	\item \textbf{Wariacje Scenariuszy:}
+	
+	Aplikacja umożliwia zmianę warunków symulacji, pozwalając użytkownikowi eksperymentować z różnymi scenariuszami zarażenia.
+	Możliwość wprowadzania dynamicznych zmian w otoczeniu biurowym, takich jak nowe stanowiska pracy czy przeniesienie osób, dla lepszego zrozumienia wpływu organizacji przestrzeni na rozprzestrzenianie się infekcji.
+	\item \textbf{Wysoce Parametryzowalna Symulacja:}
+	\begin{enumerate}
+		\item Dystans Zarażenia:
+		
+		Użytkownik ma możliwość określenia maksymalnego dystansu, na jakim wirus może się przenosić między agentami.
+		\item Czas do Zarażenia:
+		
+		Określenie czasu, jaki musi upłynąć w bliskim kontakcie z zarażoną postacią, aby doszło do zarażenia.
+		\item Zaraźliwość Patogenu:
+		
+		Parametr definiujący zdolność wirusa do zarażania innych postaci w danym środowisku symulacyjnym.
+		\item Średni Okres Inkubacji:
+		
+		Ustalenie czasu, jaki upływa od momentu zarażenia do pojawienia się objawów u zarażonej postaci.
+		\item Procent Populacji Noszący Maseczki:
+		
+		Możliwość określenia odsetka populacji, który stosuje ochronę w postaci noszenia maseczek.
+		\item Skuteczność Maseczek:
+		
+		Parametr określający, o ile procent zmniejsza się dystans zarażenia dla osób noszących maseczki.
+		\item Liczebność Populacji:
+		
+		Określenie ogólnej liczby postaci uczestniczących w symulacji.
+		\item Odporność Populacji:
+		
+		Ustalenie procenta populacji posiadającego naturalną odporność na wirusa.
+		\item Długość Symulacji:
+		
+		Określenie czasu trwania symulacji w jednostkach czasu.
+		\item Prędkość Symulacji:
+		
+		Umożliwienie regulacji prędkości symulacji, włączając przyspieszenie do 100-krotności normalnej prędkości.
+		\item Pauzowanie Symulacji:
+		
+		Dodatkowa funkcjonalność, która pozwala na zatrzymywanie symulacji w dowolnym momencie i jej późniejsze wznowienie.
+	\end{enumerate}
 \end{itemize}
+\subsection{\textbf{Wymagania niefunkcjonalne}}
+\begin{itemize}
+	\item   \textbf{  Intuicyjny Interfejs:}
+	Interfejs użytkownika powinien być zaprojektowany w sposób intuicyjny, umożliwiając łatwe poruszanie się po aplikacji i korzystanie z jej funkcji. Elementy graficzne, przyciski i opcje powinny być jasne i zrozumiałe dla użytkownika końcowego.
+	\item\textbf{ Stabilność:}
+	
+	Aplikacja powinna charakteryzować się stabilnością działania, eliminując nieoczekiwane błędy, które mogą prowadzić do awarii. Wszystkie funkcje aplikacji powinny działać zgodnie z oczekiwaniami, zapewniając płynne doświadczenie użytkownika.
+	\item\textbf{ Odporność na Awarie:}
+	
+	Aplikacja powinna być odporne na awarie poprzez implementację mechanizmów zabezpieczających, takich jak obsługa błędów, przywracanie stanu aplikacji po awarii, oraz minimalizacja wpływu awarii na całość systemu.
+	
+	\item \textbf{Płynność Symulacji:}
+	
+	Aplikacja powinna zapewniać płynną symulację nawet przy dużej ilości agentów uczestniczących w scenariuszu. Optymalizacje i zoptymalizowany kod powinny umożliwiać utrzymanie odpowiedniej prędkości symulacji, niezależnie od skomplikowania scenariusza.
+	
+	\item\textbf{ Responsywność Interfejsu:}
+	
+	Interfejs użytkownika powinien reagować szybko na akcje użytkownika, zapewniając natychmiastowe odpowiedzi na interakcje, co przyczyni się do lepszego doświadczenia użytkownika.
+\end{itemize}
+\section{\textbf{Wybrana technologia}}
+
+Rozważając wybór technologii do stworzenia aplikacji \textit{InfektoSym}, zdecydowano się na silnik gier Unity. Ten wybór był podyktowany kilkoma kluczowymi czynnikami, mającymi istotne znaczenie dla skuteczności i efektywności projektu.
+
+Przede wszystkim, istnienie dużej społeczności użytkowników stanowiło istotny argument. Unity cieszy się uznaniem ze względu na szeroki dostęp do materiałów szkoleniowych wideo, aktywność na forum dyskusyjnych oraz obfite źródła dokumentacji online. Ta społeczność stanowi nie tylko źródło wsparcia, lecz także umożliwia szybsze rozwiązywanie potencjalnych problemów napotkanych podczas procesu tworzenia aplikacji.
+
+Duże możliwości rozwoju były kolejnym czynnikiem decydującym o wyborze Unity. Silnik ten oferuje elastyczność i skalowalność, co pozwala na rozbudowę aplikacji w miarę ewentualnych zmian w wymaganiach projektu.
+
+Aspekt wydajności miał kluczowe znaczenie dla płynności symulacji. Unity, dzięki zoptymalizowanym mechanizmom renderowania i obsługi fizyki - pierwotnie zaprojektowanych do tworzenia gier komputerowych, świetnie odnajduj się w przeprowadzaniu wszelkiego rodzaju symulacji gdzie ważna jest reprezentacja graficzna.
+
+Gotowe narzędzia dostarczane przez Unity, takie jak edytory interfejsu użytkownika czy wbudowany system nawigacji dla poruszających się obiektów, znacząco skracają czas potrzebny na rozwój aplikacji. To ułatwienie pozwala skupić się na kluczowych aspektach projektu.
+
+Podsumowując, wybór Unity jako platformy do tworzenia \textit{InfektoSym} wynikał z korzyści płynących z bogatego ekosystemu, wydajności silnika oraz dostępności narzędzi ułatwiających pracę, co zapewniło efektywny i skuteczny proces realizacji projektu.
+\section{\textbf{Model symulacji rozprzestrzeniania się zarażeń zastosowany w InfektoSym}}
+
+Model symulacji zaimplementowany w \textit{InfektoSym} stanowi połączenie modelu SEIR z podejściem opartym na agentach, mając na celu dokładne odwzorowanie rozprzestrzeniania się zarażeń. Struktura modelu zakłada podział populacji na cztery główne grupy, analogiczne do SEIR:
+\begin{itemize}
+	\item \textbf{Zdrowi (Susceptible)}
+	\item \textbf{Narażeni (Exposed)} - grupa osób, które miały kontakt z zarażonym i są potencjalnie podatne na zakażenie.
+	\item \textbf{Zarażeni (Infected)} - grupa osób, u których choroba jest aktywna, co stanowi źródło dalszego zarażania.
+	\item \textbf{Usunięci (Removed)} - osoby, które zostały zidentyfikowane jako chore i zostały izolowane.
+\end{itemize}
+Symulacja opiera się na podejściu agentowym, skupiając uwagę na indywidualnych decyzjach każdego z osobników. Ten szczególny nacisk na indywidualność umożliwia uchwycenie subtelności wprowadzanych przez decyzje jednostki, co jest istotne dla precyzyjnego modelowania dynamiki rozprzestrzeniania się zarażeń.
+
+\subsection{\textbf{Równania opisujące model symulacji}}
+Założenia modelu oraz parametry symulacji pozwalają wyizolować równania opisujące prawdopodobieństwo zarażenia w określonych warunkach.
+
+Przejście agenta ze stanu zdrowego do narażonego obliczane jest według następujących parametrów i równań:
+
+Jeżeli zdrowa osoba przebywa w odległości $x < d_{maks}$, gdzie $x$ to odległość od zarażonego, a $d$ to maksymalny dystans, na jaki patogen może się przenosić w czasie $t_k > t_z$, gdzie $t_k$ to czas kontaktu, a $t_z$ to minimalny czas potrzebny do zakażenia. Szansa na przeniesienie do grupy narażonych (exposed) określana jest przez parametr zdolności zarażania patogenu $R_0$ (jeżeli $R_0 = 50$, przy każdym kontakcie szansa na narażenie wynosi 50\%).
+Dodatkowymi parametrami grającymi tu rolę jest posiadanie maseczki i jej skuteczność. 
+
+Kiedy agent zostanie uznany za narażonego, program ponownie wylicza procentowe szanse na rozwój choroby, czyli zostanie zarażonym.
+
+\begin{center}
+	$P_z = R_0 \cdot (1 - I)$
+\end{center}
+
+gdzie:\\
+$P_z \in <0,100> $ - szansa na zostanie zarażonym, wyrażona w \% \\
+$R_0 \in <0,100>$ - współczynnik zakażalności patogenu \\
+$I \in <0,1>$ - odporność jednostki.\\
+
+Wykonywane jest losowanie; jeżeli tak, osobnik zostanie przeniesiony do grupy zarażonych (Infected), jeżeli nie, wróci do puli zdrowych (Susceptible). W obu przypadkach stanie się to po czasie $T_{inkubacji} \pm 24$ godziny (czasu symulacji).
+
+Osoba zakażona jest usuwana z symulacji po czasie $T_{wykrycia} \pm 24$ godziny (czasu symulacji).
+
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{diagramModelu.png}
+	\caption{Schemat działania modelu użytego w \textit{InfektoSym}}
+\end{figure}
+
+\subsection{\textbf{Symulacja zachowań ludzkich}}
+
+
