@@ -217,45 +217,45 @@ Too many commas in name 1 of "Hongzhi Wanga, Zhiying Miao, Chaobao Zhang, Xiaona
 while executing---line 2815 of file biblatex.bst
 Too many commas in name 1 of "Hongzhi Wanga, Zhiying Miao, Chaobao Zhang, Xiaona Wei, Xiangqi Li" for entry bib:artykul
 while executing---line 2815 of file biblatex.bst
-You've used 3 entries,
+You've used 5 entries,
             6399 wiz_defined-function locations,
-            1215 strings with 9356 characters,
-and the built_in function-call counts, 22897 in all, are:
-= -- 2030
-> -- 237
-< -- 49
-+ -- 335
-- -- 86
-* -- 1945
-:= -- 2671
+            1231 strings with 10094 characters,
+and the built_in function-call counts, 55649 in all, are:
+= -- 4813
+> -- 755
+< -- 192
++ -- 1712
+- -- 343
+* -- 4381
+:= -- 6952
 add.period$ -- 0
-call.type$ -- 3
-change.case$ -- 19
-chr.to.int$ -- 44
-cite$ -- 4
-duplicate$ -- 1201
-empty$ -- 2298
-format.name$ -- 96
-if$ -- 4892
+call.type$ -- 5
+change.case$ -- 64
+chr.to.int$ -- 62
+cite$ -- 8
+duplicate$ -- 5200
+empty$ -- 4548
+format.name$ -- 410
+if$ -- 11078
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 66
-num.names$ -- 82
-pop$ -- 727
+newline$ -- 210
+num.names$ -- 192
+pop$ -- 1649
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 102
 quote$ -- 0
-skip$ -- 397
+skip$ -- 979
 stack$ -- 0
-substring$ -- 5006
-swap$ -- 249
-text.length$ -- 68
-text.prefix$ -- 2
+substring$ -- 9778
+swap$ -- 823
+text.length$ -- 194
+text.prefix$ -- 4
 top$ -- 1
-type$ -- 90
+type$ -- 158
 warning$ -- 0
-while$ -- 207
+while$ -- 820
 width$ -- 0
-write$ -- 64
+write$ -- 206
 (There were 96 error messages)

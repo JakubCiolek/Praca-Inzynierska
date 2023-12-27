@@ -17,28 +17,55 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{bib:artykul1}{article}{}
-    \name{author}{1}{}{%
-      {{hash=EHJKBMN}{%
-         family={Elizabeth\bibnamedelima Hunter},
-         familyi={E\bibinitperiod\bibinitdelim H\bibinitperiod},
-         suffix={Brian Mac\bibnamedelima Namee},
-         suffixi={B\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  N\bibinitperiod},
-         given={John\bibnamedelima Kelleher},
-         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+  \entry{bib:konferencja}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=BC}{%
+         family={Barrett},
+         familyi={B\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Bisset},
+         familyi={B\bibinitperiod},
+         given={Keith},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ES}{%
+         family={Eubank},
+         familyi={E\bibinitperiod},
+         given={Stephen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Xizhou},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Marathe},
+         familyi={M\bibinitperiod},
+         given={Madhav},
+         giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{EHBMNJK1}
-    \strng{fullhash}{EHBMNJK1}
+    \strng{namehash}{BC+1}
+    \strng{fullhash}{BCBKESFXMM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{E}
-    \field{sortinithash}{E}
-    \field{title}{An open-data-driven agent-based model to simulate infectious
-  disease outbreaks}
-    \field{journaltitle}{PLOS ONE}
-    \field{year}{2018}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1145/1413370.1413408
+    \endverb
+    \field{pages}{37}
+    \field{title}{EpiSimdemics: an efficient algorithm for simulating the
+  spread of infectious disease over large realistic social networks}
+    \field{journaltitle}{Proceedings of the 2008 ACM/IEEE conference on
+  Supercomputing}
+    \field{month}{01}
+    \field{year}{2008}
   \endentry
 
   \entry{bib:artykul}{article}{}
@@ -65,6 +92,125 @@
   spread of infectious diseases}
     \field{volume}{19}
     \field{journaltitle}{Computational and Structural Biotechnology Journal}
+    \field{year}{2021}
+  \endentry
+
+  \entry{bib:artykul1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HE}{%
+         family={Hunter},
+         familyi={H\bibinitperiod},
+         given={Elizabeth},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MNB}{%
+         family={Mac\bibnamedelima Namee},
+         familyi={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kelleher},
+         familyi={K\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \strng{namehash}{HEMNBKJ1}
+    \strng{fullhash}{HEMNBKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1371/journal.pone.0208775
+    \endverb
+    \field{number}{12}
+    \field{pages}{1\bibrangedash 35}
+    \field{title}{An open-data-driven agent-based model to simulate infectious
+  disease outbreaks}
+    \verb{url}
+    \verb https://doi.org/10.1371/journal.pone.0208775
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{PLOS ONE}
+    \field{month}{12}
+    \field{year}{2018}
+  \endentry
+
+  \entry{bib:artykul2}{article}{}
+    \name{author}{9}{}{%
+      {{hash=TK}{%
+         family={Tsaramirsis},
+         familyi={T\bibinitperiod},
+         given={Kostandinos},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={Akshet},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Pranav},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Polasani},
+         familyi={P\bibinitperiod},
+         given={Nikunj},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Randhawa},
+         familyi={R\bibinitperiod},
+         given={Princy},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tsaramirsis},
+         familyi={T\bibinitperiod},
+         given={Georgios},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pavlopoulou},
+         familyi={P\bibinitperiod},
+         given={Athanasia},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KZ}{%
+         family={Kocer},
+         familyi={K\bibinitperiod},
+         given={Zeynep},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Piromalis},
+         familyi={P\bibinitperiod},
+         given={Dimitrios},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TK+1}
+    \strng{fullhash}{TKPASPPNRPTGPAKZPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.30919/es8d592
+    \endverb
+    \field{title}{Bio-Virus Spread Simulation in Real 3D Space using Augmented
+  Reality}
+    \field{journaltitle}{Engineered Science}
+    \field{month}{01}
     \field{year}{2021}
   \endentry
 \enddatalist
