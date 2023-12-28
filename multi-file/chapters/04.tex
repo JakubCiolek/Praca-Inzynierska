@@ -1,4 +1,4 @@
-\chapter{[Właściwy dla kierunku -- np. Specyfikacja zewnętrzna]}
+\chapter{Specyfikacja zewnętrzna}
 \label{ch:04}
 
 Jeśli „Specyfikacja zewnętrzna”:
@@ -6,13 +6,54 @@ Jeśli „Specyfikacja zewnętrzna”:
 \item  wymagania sprzętowe i programowe
 \item  sposób instalacji
 \item  sposób aktywacji
-\item  kategorie użytkowników
 \item  sposób obsługi
-\item  administracja systemem
 \item  kwestie bezpieczeństwa
 \item  przykład działania
 \item  scenariusze korzystania z systemu (ilustrowane zrzutami z ekranu lub generowanymi dokumentami)
 \end{itemize}
+
+
+\section{Opis Aplikacji}
+
+Aplikacja została stworzona w środowisku Unity i zapewnia interaktywną symulację rozprzestrzeniania się zarażeń w przestrzeni biurowej. Przeznaczona jest głównie dla użytkowników korzystających z komputerów osobistych z systemem operacyjnym Windows.
+
+\section{Wymagania Sprzętowe}
+
+\begin{itemize}
+	\item Komputer z systemem operacyjnym Windows.
+	\item Ekran o rozdzielczości co najmniej 1280x720 pikseli.
+	\item Karta graficzna wspierająca OpenGL 3.2 lub nowszy.
+\end{itemize}
+
+\section{Wymagania Programowe}
+
+\begin{itemize}
+	\item System operacyjny: Windows 7/8/10 i nowsze.
+	\item Zainstalowany runtime Unity w wersji zgodnej z aplikacją.
+\end{itemize}
+
+\section{Obsługa Aplikacji}
+
+Do obsługi aplikacji wystarczy myszka, która umożliwia interakcję z interfejsem graficznym. Aplikacja nie wymaga dodatkowego sprzętu.
+\begin{itemize}
+	\item Ustawianie Parametrów Symulacji
+			odbywa się poprzez wybranie odpowiednich wartości na suwakach.
+	\item Rozpoczęcie symulacji i jej kontrola.
+			aby rozpocząć symulacje należy po ustawieniu parametrów wcisnąć przycisk. W trakcie trwania symulacji jej prędkość można ustawiać odpowiednim suwakiem. Aby zatrzymać symulację należy wcisnąć przycisk pauzy. Aby zrestartować symulację należy wcisnąć przycisk restartu.
+\end{itemize}
+
+\section{Uruchamianie Aplikacji}
+
+Aby skorzystać z aplikacji, należy wykonać poniższe kroki:
+
+\begin{enumerate}
+	\item Pobrać folder zawierający aplikację.
+	\item Rozpakować pobrany folder w wybranym miejscu na dysku.
+	\item Kliknąć w folder aplikacji.
+	\item Kliknąć dwukrotnie plik wykonywalny (exe) aplikacji.
+\end{enumerate}
+
+Aplikacja uruchomi się bez konieczności instalacji.
 
 %%%%%%%%%%%%%%%%%%%%%
 %% RYSUNEK Z PLIKU
@@ -61,31 +102,4 @@ Jeśli „Specyfikacja zewnętrzna”:
 %Rys. \ref{fig:wiele-rysunkow} przestawia wiele ważnych informacji, np. rys. \ref{fig:prawy-gorny} jest na prawo u góry.
 %%%%%%%%%%%%%%%%%%%%%
 
-
- 
-\begin{figure}
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-    y tick label style={
-        /pgf/number format/.cd,
-            fixed,   % po zakomentowaniu os rzednych jest indeksowana wykladniczo
-            fixed zerofill, % 1.0 zamiast 1
-            precision=1,
-        /tikz/.cd
-    },
-    x tick label style={
-        /pgf/number format/.cd,
-            fixed,
-            fixed zerofill,
-            precision=2,
-        /tikz/.cd
-    }
-]
-\addplot [domain=0.0:0.1] {rnd};
-\end{axis} 
-\end{tikzpicture}
-\caption{Podpis rysunku po rysunkiem.}
-\label{fig:2}
-\end{figure}
 

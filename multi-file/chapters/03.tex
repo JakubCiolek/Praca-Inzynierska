@@ -6,7 +6,7 @@
 %	\item opis narzędzi, metod eksperymentalnych, metod modelowania itp.
 %	\item metodyka pracy nad projektowaniem i implementacją -- dla prac, w których ma to zastosowanie
 %\end{itemize}
-Rozdział skupi się na omówieniu kluczowych aspektów dotyczących aplikacji do symulowania rozprzestrzeniania się zarażeń o nazwie \textit{InfektoSym}. Rozpocznie od analizy i przedstawienia wymagań funkcjonalnych oraz niefunkcjonalnych. Następnie przybliży technologie wykorzystane w aplikacji. Dodatkowo, dokładnie wyjaśni działanie zaimplementowanego modelu symulacji rozprzestrzeniania się choroby, a także w jaki sposób aplikacja oddziałuje z użytkownikiem i jakie rezultaty może dostarczyć. Ten rozdział stanowi istotne wprowadzenie do zrozumienia zarówno technicznego, jak i funkcjonalnego aspektu projektu.
+Rozdział omawia kluczowe aspekty dotyczące aplikacji do symulowania rozprzestrzeniania się zarażeń o nazwie \textit{InfektoSym}. Rozpocznie się analizy i przedstawienia wymagań funkcjonalnych oraz niefunkcjonalnych. Następnie przybliży technologie wykorzystane w aplikacji. Dodatkowo, dokładnie wyjaśni działanie zaimplementowanego modelu symulacji rozprzestrzeniania się choroby, a także w jaki sposób aplikacja oddziałuje z użytkownikiem i jakie rezultaty może dostarczyć. Ten rozdział stanowi istotne wprowadzenie do zrozumienia zarówno technicznego, jak i funkcjonalnego aspektu projektu.
 
 \section{\textbf{Wymagania funkcjonalne i niefunkcjonalne}}
 \subsection{\textbf{Wymagania funkcjonalne}}
@@ -137,5 +137,36 @@ Osoba zakażona jest usuwana z symulacji po czasie $T_{wykrycia} \pm 24$ godziny
 \end{figure}
 
 \subsection{\textbf{Symulacja zachowań ludzkich}}
+W ramach symulacji zachowań ludzkich w aplikacji, agenci mają zdefiniowane konkretne czynności, które mogą wykonywać. Poniżej przedstawiono proces realizacji tych aktywności(poniższe wartości czasowe odnoszą się do czasu symulacji):
+
+\begin{itemize}
+	\item \textbf{Początkowe Losowanie:}
+	\begin{itemize}
+		\item Kiedy agent pojawiając się w symulacji, losuje jedną z czterech podstawowych akcji: losowe spacerowanie, praca, przerwa lub lunch.
+		\item Każda akcja(oprócz losowego spacerowania) trwa od 1 do 4 godzin.
+	\end{itemize}
+	
+	\item \textbf{Zmiana Akcji:}
+	\begin{itemize}
+		\item Po zakończeniu aktualnej akcji, agent wybiera nową spośród losowego spacerowania, pracy, przerwy lub lunchu.
+		\item Ten proces powtarza się, co pozwala agentowi na cykliczne zmiany działań.
+	\end{itemize}
+	
+	\item \textbf{Rozmowy:}
+	\begin{itemize}
+		\item Kiedy agenci się mijają, mają 4\% szansę na rozpoczęcie rozmowy.
+		\item Rozmowa trwa od 10 minut do 1 godziny, a po jej zakończeniu agent wybiera nową akcję.
+	\end{itemize}
+	
+	\item \textbf{Praca, Odpoczynek i Lunch:}
+	\begin{itemize}
+		\item Jeśli agent zdecyduje się pracować, odpoczywać lub coś zjeść sprawdza dostępność odpowiednio biurek, miejsc na kanapie, stolików w kuchni.
+		\item Siada przy pierwszym wolnym miejscu i wykonuje czynność od 1 do 4 godzin, po czym wybiera nową akcję.
+		\item W przypadku braku wolnych miejsc agent rozpoczyna losowe spacerowanie.
+	\end{itemize}
+\end{itemize}
+
+Ten proces symulacyjny pozwala na odwzorowanie różnorodnych działań agentów, obejmujących pracę, odpoczynek, jedzenie i społeczne interakcje. Losowanie czasu trwania i zmiana akcji wprowadza naturalność w zachowaniach agentów.
+
 
 
