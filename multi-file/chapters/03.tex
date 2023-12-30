@@ -26,48 +26,57 @@ Rozdział omawia kluczowe aspekty dotyczące aplikacji do symulowania rozprzestr
 	Wizualizacja narażeń obejmuje różne aspekty, takie jak dystans, czas trwania kontaktu oraz ewentualne zastosowane środki ochrony osobistej.
 	\item \textbf{Wariacje Scenariuszy:}
 	
-	Aplikacja umożliwia zmianę warunków symulacji, pozwalając użytkownikowi eksperymentować z różnymi scenariuszami zarażenia.
-	Możliwość wprowadzania dynamicznych zmian w otoczeniu biurowym, takich jak nowe stanowiska pracy czy przeniesienie osób, dla lepszego zrozumienia wpływu organizacji przestrzeni na rozprzestrzenianie się infekcji.
+	Aplikacja umożliwia eksperymentowanie z różnymi scenariuszami zarażenia poprzez dostosowanie parametrów symulacji. Użytkownik może modyfikować takie czynniki jak dystans zarażenia, czas do zarażenia, czy skuteczność maseczek, co pozwala na badanie wpływu tych parametrów na proces rozprzestrzeniania się infekcji w przestrzeni biurowej.
+
 	\item \textbf{Wysoce Parametryzowalna Symulacja:}
 	\begin{enumerate}
-		\item Dystans Zarażenia:
+		\item \textbf{Dystans Zarażenia:}
 		
 		Użytkownik ma możliwość określenia maksymalnego dystansu, na jakim wirus może się przenosić między agentami.
-		\item Czas do Zarażenia:
+		\item \textbf{Czas do Zarażenia:}
 		
 		Określenie czasu, jaki musi upłynąć w bliskim kontakcie z zarażoną postacią, aby doszło do zarażenia.
-		\item Zaraźliwość Patogenu:
+		\item \textbf{Zaraźliwość Patogenu:}
 		
 		Parametr definiujący zdolność wirusa do zarażania innych postaci w danym środowisku symulacyjnym.
-		\item Średni Okres Inkubacji:
+		\item \textbf{Średni Okres Inkubacji:}
 		
 		Ustalenie czasu, jaki upływa od momentu zarażenia do pojawienia się objawów u zarażonej postaci.
-		\item Procent Populacji Noszący Maseczki:
+		\item \textbf{Procent Populacji Noszący Maseczki:}
 		
 		Możliwość określenia odsetka populacji, który stosuje ochronę w postaci noszenia maseczek.
-		\item Skuteczność Maseczek:
+		\item \textbf{Skuteczność Maseczek:}
 		
 		Parametr określający, o ile procent zmniejsza się dystans zarażenia dla osób noszących maseczki.
-		\item Liczebność Populacji:
+		\item \textbf{Liczebność Populacji:}
 		
 		Określenie ogólnej liczby postaci uczestniczących w symulacji.
-		\item Odporność Populacji:
+		
+		\item \textbf{Początkowy Procent Zarażonych:}
+		
+		Określenie procentowej liczby zarażonych w początkowej populacji.
+		\item \textbf{Odporność Populacji:}
 		
 		Ustalenie procenta populacji posiadającego naturalną odporność na wirusa.
-		\item Długość Symulacji:
+		\item \textbf{Długość Symulacji:}
 		
 		Określenie czasu trwania symulacji w jednostkach czasu.
-		\item Prędkość Symulacji:
+		\item \textbf{Prędkość Symulacji:}
 		
 		Umożliwienie regulacji prędkości symulacji, włączając przyspieszenie do 100-krotności normalnej prędkości.
-		\item Pauzowanie Symulacji:
+		
+		\item \textbf{Średni czas wykrycia:}
+		
+		Ustalenie czasu, jaki upływa od momentu pojawienia się objawów, do ich wykrycia i zlecenia kwarantanny.
+		\item \textbf{Pauzowanie Symulacji:}
 		
 		Dodatkowa funkcjonalność, która pozwala na zatrzymywanie symulacji w dowolnym momencie i jej późniejsze wznowienie.
 	\end{enumerate}
 \end{itemize}
 \subsection{\textbf{Wymagania niefunkcjonalne}}
 \begin{itemize}
-	\item   \textbf{  Intuicyjny Interfejs:}
+	\item\textbf{  Intuicyjny Interfejs:}
+	
 	Interfejs użytkownika powinien być zaprojektowany w sposób intuicyjny, umożliwiając łatwe poruszanie się po aplikacji i korzystanie z jej funkcji. Elementy graficzne, przyciski i opcje powinny być jasne i zrozumiałe dla użytkownika końcowego.
 	\item\textbf{ Stabilność:}
 	
@@ -92,7 +101,7 @@ Przede wszystkim, istnienie dużej społeczności użytkowników stanowiło isto
 
 Duże możliwości rozwoju były kolejnym czynnikiem decydującym o wyborze Unity. Silnik ten oferuje elastyczność i skalowalność, co pozwala na rozbudowę aplikacji w miarę ewentualnych zmian w wymaganiach projektu.
 
-Aspekt wydajności miał kluczowe znaczenie dla płynności symulacji. Unity, dzięki zoptymalizowanym mechanizmom renderowania i obsługi fizyki - pierwotnie zaprojektowanych do tworzenia gier komputerowych, świetnie odnajduj się w przeprowadzaniu wszelkiego rodzaju symulacji gdzie ważna jest reprezentacja graficzna.
+Aspekt wydajności miał kluczowe znaczenie dla płynności symulacji. Unity, dzięki zoptymalizowanym mechanizmom renderowania i obsługi fizyki, pierwotnie zaprojektowanych do tworzenia gier komputerowych, świetnie odnajduje się w przeprowadzaniu wszelkiego rodzaju symulacji gdzie ważna jest reprezentacja graficzna.
 
 Gotowe narzędzia dostarczane przez Unity, takie jak edytory interfejsu użytkownika czy wbudowany system nawigacji dla poruszających się obiektów, znacząco skracają czas potrzebny na rozwój aplikacji. To ułatwienie pozwala skupić się na kluczowych aspektach projektu.
 
@@ -101,10 +110,10 @@ Podsumowując, wybór Unity jako platformy do tworzenia \textit{InfektoSym} wyni
 
 Model symulacji zaimplementowany w \textit{InfektoSym} stanowi połączenie modelu SEIR z podejściem opartym na agentach, mając na celu dokładne odwzorowanie rozprzestrzeniania się zarażeń. Struktura modelu zakłada podział populacji na cztery główne grupy, analogiczne do SEIR:
 \begin{itemize}
-	\item \textbf{Zdrowi (Susceptible)}
+	\item \textbf{Zdrowi (Susceptible)}  - grupa osób zdrowych.
 	\item \textbf{Narażeni (Exposed)} - grupa osób, które miały kontakt z zarażonym i są potencjalnie podatne na zakażenie.
 	\item \textbf{Zarażeni (Infected)} - grupa osób, u których choroba jest aktywna, co stanowi źródło dalszego zarażania.
-	\item \textbf{Usunięci (Removed)} - osoby, które zostały zidentyfikowane jako chore i zostały izolowane.
+	\item \textbf{Usunięci (Removed)} - osoby, które zostały zidentyfikowane jako chore i zostały odizolowane.
 \end{itemize}
 Symulacja opiera się na podejściu agentowym, skupiając uwagę na indywidualnych decyzjach każdego z osobników. Ten szczególny nacisk na indywidualność umożliwia uchwycenie subtelności wprowadzanych przez decyzje jednostki, co jest istotne dla precyzyjnego modelowania dynamiki rozprzestrzeniania się zarażeń.
 
@@ -114,9 +123,9 @@ Założenia modelu oraz parametry symulacji pozwalają wyizolować równania opi
 Przejście agenta ze stanu zdrowego do narażonego obliczane jest według następujących parametrów i równań:
 
 Jeżeli zdrowa osoba przebywa w odległości $x < d_{maks}$, gdzie $x$ to odległość od zarażonego, a $d$ to maksymalny dystans, na jaki patogen może się przenosić w czasie $t_k > t_z$, gdzie $t_k$ to czas kontaktu, a $t_z$ to minimalny czas potrzebny do zakażenia. Szansa na przeniesienie do grupy narażonych (exposed) określana jest przez parametr zdolności zarażania patogenu $R_0$ (jeżeli $R_0 = 50$, przy każdym kontakcie szansa na narażenie wynosi 50\%).
-Dodatkowymi parametrami grającymi tu rolę jest posiadanie maseczki i jej skuteczność. 
+Dodatkowymi parametrami grającymi tu rolę jest posiadanie maseczki i jej skuteczność. Dystans przenoszenia się patogenu jest procentowo zmniejszany w zależności od ustawionej skuteczności maseczek.\\
 
-Kiedy agent zostanie uznany za narażonego, program ponownie wylicza procentowe szanse na rozwój choroby, czyli zostanie zarażonym.
+Kiedy agent zostanie uznany za narażonego, program wylicza procentowe szanse na rozwój choroby. Na podstawie wzoru:
 
 \begin{center}
 	$P_z = R_0 \cdot (1 - I)$
@@ -137,7 +146,7 @@ Osoba zakażona jest usuwana z symulacji po czasie $T_{wykrycia} \pm 24$ godziny
 \end{figure}
 
 \subsection{\textbf{Symulacja zachowań ludzkich}}
-W ramach symulacji zachowań ludzkich w aplikacji, agenci mają zdefiniowane konkretne czynności, które mogą wykonywać. Poniżej przedstawiono proces realizacji tych aktywności(poniższe wartości czasowe odnoszą się do czasu symulacji):
+W ramach symulacji zachowań ludzkich w aplikacji, agenci mają zdefiniowane konkretne czynności, które mogą wykonywać. Poniżej przedstawiono proces realizacji tych aktywności (poniższe wartości czasowe odnoszą się do czasu symulacji):
 
 \begin{itemize}
 	\item \textbf{Początkowe Losowanie:}

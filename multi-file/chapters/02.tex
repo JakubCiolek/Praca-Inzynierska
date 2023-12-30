@@ -67,7 +67,7 @@ Teoretyczny model K-SEIR został przekształcony w prosty oprogramowanie, zaimpl
 
 Modele agentowe stanowią komputerowe symulacje, w których agenci, reprezentujący różne jednostki, mogą wejść w interakcję między sobą. Agentami mogą być jednostki takie jak osoby, organizacje, a nawet obszary geograficzne, takie jak województwa czy kraje. Wzajemne oddziaływania między agentami są określone przez zdefiniowane zasady programowe. Każdy z agentów podejmuje decyzje indywidualnie, co może obejmować zarówno proste wybory, na przykład decyzję o kierunku ruchu, jak i bardziej złożone decyzje, takie jak znalezienie konkretnego innego agenta lub sekwencję zdarzeń. W kontekście symulacji zarażeń, tego typu podejście pozwala na realistyczne uwzględnienie nieprzewidywalnych decyzji, jakie może podjąć jednostka.
 
-Jednym z artykułów naukowych, poruszających temat modelowania agentowego pod tytułem: \textit{,,An open-data-driven agent-based model to simulate infectious disease outbreaks''} \cite{bib:artykul1} dostarczy nam cennych informacji na  temat implementacji takich rozwiązań. 
+Jeden z artykułów naukowych, poruszający temat modelowania agentowego, pod tytułem: \textit{,,An open-data-driven agent-based model to simulate infectious disease outbreaks''} \cite{bib:artykul1} dostarczy nam cennych informacji na  temat implementacji takich rozwiązań. 
 
 W artykule możemy przeczytać szczegółowe informacje na temat tego co badacze wzięli po uwagę podczas tworzenia swojego modelu.
 był on oparty o dane populacji, umiejscowienia szkół i miejsc pracy a także danych dotyczących szczepień. Rzeczywiste dane są używane do określenia struktury wiekowej i płciowej naszych populacji, wraz z właściwym rozkładem wielkości gospodarstw domowych oraz innymi cechami takimi jak wiek dzieci. Następnie dane opisujące lokalizację szkół oraz miejsc pracy dają możliwość wiernego odwzorowania interakcji pomiędzy ludźmi. Na koniec aby ocenić podatność populacji na rozprzestrzenianie się choroby uwzględniono ilość szczepień (badanie opierało się na badaniu epidemii odry).
@@ -108,7 +108,7 @@ Podsumowując, przewagą modeli agentowych nad modelami takimi jak SEIR jest uwz
 
 \section{\textbf{Inne aplikacje do symulacji zarażeń}}
 
-Ta część zwróci uwagę na dwie innowacyjne metody modelowania zarażeń, które stanowią wyjątkowe podejście w szerokim spektrum dostępnych metod. Ze względu na obecności różnorodnych podejść do modelowania zarażeń, skoncentrujemy się teraz na dwóch szczególnie interesujących metodach. Pierwszą z nich jest ambitny projekt symulacyjny oparty na algorytmach równoległych, korzystający z obszernych danych dotyczących populacji w Stanach Zjednoczonych. Drugą, szczególnie oryginalną, jest aplikacja wykorzystująca technologię rozszerzonej rzeczywistości do wizualizacji, jak wirus może utrzymywać się na różnych powierzchniach i w konsekwencji jak może się szerzyć. Przechodząc do analizy tych dwóch wyjątkowych podejść w celu zidentyfikowania ich specyficznych zalet.
+W kontekście licznych podejść do modelowania zarażeń, niemożliwe jest przedstawienie wszystkich dostępnych rozwiązań. W tej sekcji skupiono się zatem na przedstawieniu dwóch szczególnie ciekawych metod oraz analizie innych aplikacji dostępnych na rynku, co pozwoli na pełniejsze zrozumienie różnorodności narzędzi do symulacji epidemii. Poprzez analizę tych dwóch podejść oraz eksplorację rynkowych rozwiązań, będziemy mogli lepiej zidentyfikować specyficzne zalety i wartość każdej z badanych metod w kontekście modelowania zarażeń.
 
 \subsection{\textbf{EpiSimdemics - równoległy algorytm symulacji epidemii}}
 \textit{,,EpiSimdemics: an efficient algorithm for simulating the spread of infectious disease over large realistic social networks''} \cite{bib:konferencja} Jest bardzo ambitnym projektem wykorzystującym do obliczeń równoległy algorytm do symulowania rozprzestrzeniania się zarażeń w dużych i realistycznych symulowanych społeczeństwach. Badacze postanowili zasymulować niemalże statystycznie nierozróżnialną populację Stanów Zjednoczonych. Każdy z agentów w symulacji jest inny i opisany przez nawet do 163 zmiennych demograficznych z spisu ludności. Algorytm \textit{EpiSimdemics} opiera się na:
@@ -121,14 +121,41 @@ Z tych założeń są formułowane równania przejść stanów dla każdego z os
 	Dzięki zastosowaniu tak skomplikowanego systemu, program \textit{EpiSimdemics} posiada zdolność dostarczania szczegółowych informacji na temat rozprzestrzeniania się choroby w populacji, obejmujących takie detale jak konkretny zestaw osób zainfekowanych, miejsce zarażenia oraz kto ich zarażał.
 \subsection{\textbf{Zastosowanie rozszerzonej rzeczywistości w symulacji zarażeń}}
 
-Zainspirowani globalną pandemią COVID-19, badacze postanowili stworzyć innowacyjną aplikację pokazującą rozprzestrzenianie się wirusa poprzez różnego rodzaju powierzchnie i przedmioty, z którymi stykamy się w codziennym życiu. Udało się to dzięki wykorzystaniu rozszerzonej rzeczywistości, co pozwoliło na dokładne zobrazowanie, jak wirusy i bakterie mogą pozostawać na tych powierzchniach oraz jak łatwo mogą być przenoszone poprzez kontakty ręczne i inne interakcje. Aplikacja umożliwia użytkownikowi stworzenie własnego patogenu lub wybranie istniejącego, a następnie korzystając z kamery pozwala umieścić go w świecie wirtualnym. Użytkownik może śledzić, jak długo patogen utrzymuje się w danym miejscu, potencjalnie stanowiąc ryzyko przeniesienia się na inną osobę. Swoje spostrzeżenia i wnioski badacze zawarli w artykule \textit{Bio-Virus Spread Simulation in Real 3D Space using Augmented Reality} \cite{bib:artykul2}
+Zainspirowani globalną pandemią COVID-19, badacze postanowili stworzyć innowacyjną aplikację pokazującą rozprzestrzenianie się wirusa poprzez różnego rodzaju powierzchnie i przedmioty, z którymi stykamy się w codziennym życiu. Udało się to dzięki wykorzystaniu rozszerzonej rzeczywistości, co pozwoliło na dokładne zobrazowanie, jak wirusy i bakterie mogą pozostawać na tych powierzchniach oraz jak łatwo mogą być przenoszone poprzez kontakty ręczne i inne interakcje \ref{fig:3Dapp}. Aplikacja umożliwia użytkownikowi stworzenie własnego patogenu lub wybranie istniejącego, a następnie korzystając z kamery pozwala umieścić go w świecie wirtualnym. Użytkownik może śledzić, jak długo patogen utrzymuje się w danym miejscu, potencjalnie stanowiąc ryzyko przeniesienia się na inną osobę. Swoje spostrzeżenia i wnioski badacze zawarli w artykule \textit{Bio-Virus Spread Simulation in Real 3D Space using Augmented Reality} \cite{bib:artykul2}
 
 \begin{figure}[h!]
 	\includegraphics[width=\linewidth]{VirusIn3DSpaces.png}
 	\caption{Demonstracja działania aplikacji: (a) dostosowywanie niestandardowego wirusa, (b) wprowadzenie wirusa w rzeczywistego świata, (c) wirus widoczny w rozszerzonej rzeczywistości z panelem informacyjnym \cite{bib:artykul2}.}
+	\label{fig:3Dapp}
 \end{figure}
 
-% TODO dodac cos o aplikacji https://www.biointeractive.org/classroom-resources/modeling-disease-spread
+\subsection{\textbf{Aplikacje dostępne w internecie i sklepach z aplikacjami}}
+
+W dzisiejszym świecie aplikacji internetowych oraz sklepów z aplikacjami można znaleźć różnorodne narzędzia związane z modelowaniem i symulacją zarażeń. Jednym z przykładów jest aplikacja stworzona przez Biointeractive \textit {,,Modeling Disease Spread''} \cite{bib:BioInteractiveApp}, która umożliwia interaktywne śledzenie modelu SIR. Warto jednak zauważyć, że ta konkretna aplikacja, skoncentrowana głównie na prezentacji wykresów i danych, jest raczej statycznym narzędziem \ref{fig:BioInteractiveAppScreen}.
+
+Przejście do sklepów z aplikacjami, takich jak Google Play, odsłania kolejny aspekt tego tematu. Choć istnieje wiele aplikacji związanych z modelowaniem zarażeń, niestety większość z nich przybiera formę gier, traktując temat bardziej jako formę rozrywki niż naukowego czy edukacyjnego narzędzia \cite{bib:PlagueInc} \cite{bib:EpidemicSimulator}. Te aplikacje często skupiają się na abstrakcyjnych czy fantastycznych scenariuszach, mając niewiele wspólnego z realistycznym oddaniem symulacji zarażeń. W efekcie istnieje wyraźna potrzeba bardziej zaawansowanych i edukacyjnych narzędzi, które mogą rzetelnie modelować i symulować procesy związane z rozprzestrzenianiem się chorób zakaźnych.
+
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.8\textwidth}
+		\includegraphics[width=\textwidth]{biointeractiveSIR.png}
+		\caption{Interfejs aplikacji \cite{bib:BioInteractiveApp}.}
+		\label{fig:lewy-gorny}
+	\end{subfigure}
+	
+	\vspace{1cm} % Dodałem odstęp pionowy
+	
+	\begin{subfigure}{0.8\textwidth}
+		\includegraphics[width=\textwidth]{biointeractiveSIR1.png}
+		\caption{Statystyki generowane przez aplikację \cite{bib:BioInteractiveApp}.}
+		\label{fig:prawy-gorny}
+	\end{subfigure}
+	
+	\caption{Wygląd aplikacji \textit{,,Modeling Disease Spread''} \cite{bib:BioInteractiveApp}.}
+	\label{fig:BioInteractiveAppScreen}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 

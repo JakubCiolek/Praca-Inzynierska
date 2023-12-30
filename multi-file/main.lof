@@ -9,19 +9,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schemat działania modelu \textit {K-SEIR}\blx@tocontentsinit {0}\cite {bib:artykul} }}{4}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Demonstracja działania aplikacji: (a) dostosowywanie niestandardowego wirusa, (b) wprowadzenie wirusa w rzeczywistego świata, (c) wirus widoczny w rozszerzonej rzeczywistości z panelem informacyjnym \blx@tocontentsinit {0}\cite {bib:artykul2}.}}{9}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Wygląd aplikacji \textit {,,Modeling Disease Spread''} \blx@tocontentsinit {0}\cite {bib:BioInteractiveApp}.}}{10}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Schemat działania modelu użytego w \textit {InfektoSym}}}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Schemat działania modelu użytego w \textit {InfektoSym}}}{16}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Ekran początkowy aplikacji.}}{19}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ekran podczas działającej symulacji: 1. Suwaki do ustawiania parametrów, 2. Przyciski kontrolujące 3. Aktualne statystyki i czas, 4. Wizualizacja}}{19}{figure.caption.13}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Ekran zakończenia symulacji}}{20}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa biura: 1. Biurka do pracy, 2. Kuchnia ze stolikami, 3. Miejsce wypoczynku}}{20}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ekran początkowy aplikacji.}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ekran podczas działającej symulacji: 1. Suwaki do ustawiania parametrów, 2. Przyciski kontrolujące 3. Aktualne statystyki i czas, 4. Wizualizacja}}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Ekran zakończenia symulacji}}{21}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa biura: 1. Biurka do pracy, 2. Kuchnia ze stolikami, 3. Miejsce wypoczynku}}{22}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Pseudokod w \texttt {listings}.}}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sekwencyjny diagram algorytmu symulacji zachowań ludzkich}}{26}{figure.caption.17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\babel@toc {british}{}\relax 
-\babel@toc {polish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

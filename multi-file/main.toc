@@ -13,28 +13,28 @@
 \contentsline {section}{\numberline {2.3}\textbf {Inne aplikacje do symulacji zarażeń}}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}\textbf {EpiSimdemics - równoległy algorytm symulacji epidemii}}{7}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}\textbf {Zastosowanie rozszerzonej rzeczywistości w symulacji zarażeń}}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}\textbf {Aplikacje dostępne w internecie i sklepach z aplikacjami}}{8}{subsection.2.3.3}%
 \contentsline {chapter}{\numberline {3}Wymagania i narzędzia}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}\textbf {Wymagania funkcjonalne i niefunkcjonalne}}{11}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}\textbf {Wymagania funkcjonalne}}{11}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}\textbf {Wymagania niefunkcjonalne}}{13}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}\textbf {Wybrana technologia}}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.2}\textbf {Wybrana technologia}}{14}{section.3.2}%
 \contentsline {section}{\numberline {3.3}\textbf {Model symulacji rozprzestrzeniania się zarażeń zastosowany w InfektoSym}}{14}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}\textbf {Równania opisujące model symulacji}}{15}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}\textbf {Symulacja zachowań ludzkich}}{15}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Specyfikacja zewnętrzna}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Opis Aplikacji}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Wymagania Sprzętowe}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Wymagania Programowe}{18}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Obsługa Aplikacji}{18}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Uruchamianie Aplikacji}{18}{section.4.5}%
-\contentsline {chapter}{\numberline {5}[Właściwy dla kierunku -- np. Specyfikacja wewnętrzna]}{21}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{25}{chapter.7}%
-\contentsline {chapter}{Bibliografia}{28}{chapter*.18}%
-\contentsline {chapter}{Spis skrótów i symboli}{31}{appendix*.19}%
-\babel@toc {british}{}\relax 
-\babel@toc {polish}{}\relax 
-\contentsline {chapter}{Źródła}{33}{appendix*.20}%
-\contentsline {chapter}{Lista dodatkowych plików, uzupełniających tekst pracy}{35}{appendix*.21}%
-\contentsline {chapter}{Spis rysunków}{37}{appendix*.22}%
-\contentsline {chapter}{Spis tabel}{39}{appendix*.23}%
+\contentsline {subsection}{\numberline {3.3.2}\textbf {Symulacja zachowań ludzkich}}{16}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Specyfikacja zewnętrzna}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Opis Aplikacji}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Wymagania Sprzętowe}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Wymagania Programowe}{19}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Obsługa Aplikacji}{19}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Uruchamianie Aplikacji}{20}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}\textbf {Architektura systemu}}{24}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{29}{chapter.7}%
+\contentsline {chapter}{Bibliografia}{32}{chapter*.19}%
+\contentsline {chapter}{Spis skrótów i symboli}{35}{appendix*.20}%
+\contentsline {chapter}{Źródła}{37}{appendix*.21}%
+\contentsline {chapter}{Lista dodatkowych plików, uzupełniających tekst pracy}{39}{appendix*.22}%
+\contentsline {chapter}{Spis rysunków}{41}{appendix*.23}%
+\contentsline {chapter}{Spis tabel}{43}{appendix*.24}%

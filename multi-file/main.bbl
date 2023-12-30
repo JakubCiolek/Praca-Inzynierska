@@ -239,6 +239,30 @@
     \field{year}{2020}
   \endentry
 
+  \entry{bib:PlagueInc}{online}{}
+    \name{author}{1}{}{%
+      {{hash=CN}{%
+         family={Creations},
+         familyi={C\bibinitperiod},
+         given={Ndemic},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CN1}
+    \strng{fullhash}{CN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Plague Inc.}
+    \verb{url}
+    \verb https://play.google.com/store/apps/details?id=com.miniclip.plagueinc
+    \endverb
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
+  \endentry
+
   \entry{bib:artykul}{article}{}
     \name{author}{1}{}{%
       {{hash=HWCZXWXLZM}{%
@@ -385,6 +409,62 @@
     \field{volume}{21}
     \field{journaltitle}{Informatics in Medicine Unlocked}
     \field{year}{2020}
+  \endentry
+
+  \entry{bib:EpidemicSimulator}{online}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Kopec},
+         familyi={K\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Epidemic Simulator}
+    \verb{url}
+    \verb https://play.google.com/store/apps/details?id=com.kopecsec.EpidemicSi
+    \verb mulator&hl=pl&gl=US
+    \endverb
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
+  \endentry
+
+  \entry{bib:BioInteractiveApp}{online}{}
+    \name{author}{2}{}{%
+      {{hash=NI}{%
+         family={Nazwisko},
+         familyi={N\bibinitperiod},
+         given={Imię},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=NI}{%
+         family={Nazwisko},
+         familyi={N\bibinitperiod},
+         given={Imię},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NINI1}
+    \strng{fullhash}{NINI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{Modeling Disease Spread}
+    \verb{url}
+    \verb https://www.biointeractive.org/classroom-resources/modeling-disease-s
+    \verb pread
+    \endverb
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
   \endentry
 
   \entry{bib:RossHudson}{article}{}
