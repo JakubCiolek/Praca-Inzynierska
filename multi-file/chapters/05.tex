@@ -87,88 +87,6 @@ Algorytm ten skupia się na precyzyjnej symulacji interakcji między osobami. W 
 	\label{diagramZarazanie}
 \end{figure}
 
-\begin{figure}
-\centering
-\begin{lstlisting}
-private void OnTriggerEnter2D(Collider2D collider)
-{
-	humanScript otherHuman = collider.GetComponent<humanScript>();
-	int conversation = UnityEngine.Random.Range(0,100);
-	if (conversation == 1)
-	{
-		otherHuman.Conversation();
-		Conversation();
-	}
-	if(otherHuman.GetStatus() == Status.INFECTED && status==Status.HEALTHY)
-	{
-		ShowRange();
-		timeEnter = Time.time;
-	}
-	if(status == Status.INFECTED && otherHuman.GetStatus() == Status.HEALTHY)
-	{
-		ShowRange();
-	}
-}
-\end{lstlisting}
-\caption{Funkcja obsługująca początek kontaktu miedzy agentami.}
-\label{fig:kod:OnTriggerEnter}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\begin{lstlisting}
-		private void OnTriggerExit2D(Collider2D collider)
-		{
-			humanScript otherHuman = collider.GetComponent<humanScript>();
-			if(otherHuman.GetStatus() == Status.INFECTED && status==Status.HEALTHY)
-			{
-				timeExit = Time.time;
-				
-				float contactDuration = timeExit - timeEnter;
-				
-				if (contactDuration > timeToInfection)
-				{
-					int exposed = UnityEngine.Random.Range(0,100);
-					if(exposed < virusSpreadFactor)
-					{
-						status = Status.EXPOSED;
-						body.color = Color.yellow;
-						simInterface.IncreaseExposed();
-						CalculateInfection();
-					}
-				}
-			}
-			HideRange();
-		}
-	\end{lstlisting}
-	\caption{Funkcja obsługująca koniec kontaktu miedzy agentami.}
-	\label{fig:kod:OnTriggerExit}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\begin{lstlisting}
-	    privatevoid CalculateInfection()
-		{
-			int infectionProbabilty = (int)(virusSpreadFactor*(1 - immunity));
-			int attempt = UnityEngine.Random.Range(1,100);
-			if(attempt < infectionProbabilty)
-			{
-				infectionTime = clock.GetHoursPassed() + UnityEngine.Random.Range(incubationPeriod-24, incubationPeriod+24);
-				willBeInfected = true;
-			}
-			else
-			{
-				infectionTime = clock.GetHoursPassed() + 24;
-				willBeInfected = false;
-			}
-		}
-	\end{lstlisting}
-	\caption{Funkcja wyliczająca szansę na rozwinięcie się choroby.}
-	\label{fig:kod:CalculateInfection}
-\end{figure}
-
 \subsection{Symulacja zachowań ludzkich}
 Ten algorytm odpowiada za symulację codziennych działań ludzi w biurze. Losuje on różne akcje, takie jak \textit{spacerowanie, lunch, przerwa} czy \textit{praca}. W przypadku akcji \textit{praca, lunch} lub \textit{przerwa}, algorytm znajduje dostępne miejsce siedzące i zajmuje je na losowy czas od 1 do 4 godzin, po czym zmienia akcję na kolejną. Jeżeli nie ma wolnego miejsca, akcja zostaje natychmiastowo zmieniona na losowe spacerowanie. W trakcie tych działań, w przypadku spotkania dwóch postaci, istnieje 1\% szansa na rozpoczęcie rozmowy. Po zakończonej rozmowie losowana jest kolejna akcja. Algorytm przedstawiony jest na diagramie sekwencyjnym \ref{diagramZachowanie}. Implementację pokazuje fragment kodu \ref{fig:kod:Activity}, zawiera dwie funkcje kontrolujące rozpoczęcie i zakończenie akcji. Do symulacji konwersacji miedzy agentami wykorzystano analogiczne bardzo podobne rozwiązanie, rozszerzone o dodatkowe kroki konieczne dla tego zachowania.
 
@@ -176,47 +94,6 @@ Ten algorytm odpowiada za symulację codziennych działań ludzi w biurze. Losuj
 	\includegraphics[width=\linewidth]{DiagramAlgorytmuZachowania.png}
 	\caption{Sekwencyjny diagram algorytmu symulacji zachowań ludzkich}
 	\label{diagramZachowanie}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\begin{lstlisting}
-		private void StartActivity()
-		{
-			activity = (Activity)UnityEngine.Random.Range(0,4);
-			bool seatFound = false;
-			switch(activity)
-			{
-				case Activity.WORK:
-				seatFound = SearchSeat(desks);
-				break;
-				case Activity.BREAK:
-				seatFound = SearchSeat(sofas);
-				break;
-				case Activity.LUNCH:
-				seatFound = SearchSeat(kitchenSeats);
-				break;
-				default:
-				break;
-			}
-			if(!seatFound)
-			{
-				activity = Activity.RANDOM_WALK;
-			}
-		}
-		
-		private void EndActivity()//wywolywana w funkcji Update()
-		{
-			if(currentActivityEndTime < clock.GetHour())
-			{
-				currentSeat.SetOccupation(false);
-				StartActivity();
-			}
-		}
-	\end{lstlisting}
-	\caption{Funkcja wyliczająca szansę na rozwinięcie się choroby.}
-	\label{fig:kod:Activity}
 \end{figure}
 
 

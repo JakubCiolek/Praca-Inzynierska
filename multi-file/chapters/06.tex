@@ -1,18 +1,82 @@
 \chapter{Weryfikacja i walidacja}
 \label{ch:06}
-\begin{itemize}
-\item sposób testowania w ramach pracy (np. odniesienie do modelu V)
-\item organizacja eksperymentów
-\item przypadki testowe zakres testowania (pełny/niepełny)
-\item wykryte i usunięte błędy
-\item opcjonalnie wyniki badań eksperymentalnych
-\end{itemize}
+%\begin{itemize}
+%\item sposób testowania w ramach pracy (np. odniesienie do modelu V)
+%\item organizacja eksperymentów
+%\item przypadki testowe zakres testowania (pełny/niepełny)
+%\item wykryte i usunięte błędy
+%\item opcjonalnie wyniki badań eksperymentalnych
+%\end{itemize}
 
 W tym rozdziale przedstawione zostaną techniki sprawdzania i potwierdzania poprawności działania aplikacji. W procesie tworzenia oprogramowania istotne jest nie tylko zaplanowanie i implementacja funkcji, ale także dokładne sprawdzenie, czy rezultaty są zgodne z założeniami projektowymi. Weryfikacja koncentruje się na sprawdzeniu, czy projekt spełnia założenia funkcjonalne i techniczne, natomiast walidacja ocenia, czy to, co zostało zaimplementowane, odpowiada rzeczywistym potrzebom użytkowników. W dalszej części tego rozdziału przedstawione zostaną metody, narzędzia i procedury stosowane w procesie weryfikacji i walidacji.\\
 
 \section{Sposoby testowania i organizacja eksperymentów}
 
 W ramach przeprowadzonych testów aplikacji dokonano ręcznego dostosowania parametrów symulacji. Obejmowały one zakres od maksymalnych do minimalnych wartości oraz różne kombinacje pomiędzy nimi. Kluczowe parametry zostały testowane oddzielnie, a przykładowo długość symulacji poddana była analizie, aby ocenić wpływ zwiększenia liczby cykli dnia i nocy na funkcjonalność. Dodatkowo przetestowano różne wartości procentowe dla zarażonych i osób noszących maseczki. Eksperymentowano również z różnymi liczebnościami populacji, aby zrozumieć, jak wpływają one na symulację zachowań ludzkich.
+
+
+\section{Przypadki testowe}
+
+Tabela \ref{tab:parameters} przedstawia różnorodne przypadki testowe dla parametrów symulacji w aplikacji. Testy zostały zaplanowane w celu sprawdzenia zachowania symulacji w ekstremalnych warunkach oraz w warunkach typowych. Poniżej znajduje się krótki opis każdego testu:
+
+\begin{itemize}
+	\item \textbf{Test 1 (Maksymalne Wartości):} Ten test uwzględnia maksymalne wartości dla każdego z parametrów symulacji. Jest to scenariusz ekstremalny, mający na celu zidentyfikowanie, czy aplikacja poprawnie obsługuje ekstremalne warunki, takie jak bardzo zaraźliwe środowisko, długi czas inkubacji czy duża liczba populacji.
+
+	\item \textbf{Test 2 (Minimalne Wartości):} W tym teście wszystkie parametry przyjmują minimalne wartości. Celem jest sprawdzenie, czy aplikacja jest odporna na sytuacje, w których czynniki zakaźne są minimalne, a populacja jest ograniczona.
+	
+	\item \textbf{Test3 (Wartości Domyślne):} Test ten obejmuje wartości domyślne dla wszystkich parametrów symulacji. Stanowi punkt odniesienia, w którym sprawdzane jest standardowe zachowanie symulacji.
+	
+	\item \textbf{Testy 4 - 8 (Losowe Wartości):}
+	 Pozostałe testy obejmują losowo wybrane wartości parametrów symulacji. Te przypadki mają na celu ocenę ogólnej elastyczności i skuteczności aplikacji w zróżnicowanych warunkach. Wartości te zostały dobrane w celu odtworzenia różnorodnych scenariuszy, które mogą wystąpić w rzeczywistych warunkach.
+\end{itemize}
+	
+\begin{table}[h!]
+	\caption{Parametry symulacji użyte w poszczególnych testach.}
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\textbf{Parametry Symulacji} & \textbf{Test1} & \textbf{Test2}  & \textbf{Test3}  & \textbf{Test4}  & \textbf{Test5} & \textbf{Test6} & \textbf{Test7} & \textbf{Test8}  \\
+		\hline
+		Dystans Zarażenia & 3 & 1 & 2 & 4 & 5 & 1 & 3 & 2\\
+		\hline
+		Czas do Zarażenia & 60 &  1 & 2 & 30 & 10 & 15 & 40 & 5\\
+		\hline
+		Zaraźliwość Patogenu & 100  & 0 & 50 & 75 & 20 & 40 & 60 & 10\\
+		\hline
+		Średni Okres Inkubacji & 3 & 1 & 2 & 1 & 3 & 1 & 2 & 3\\
+		\hline
+		Procent Noszący Maseczki & 100 & 0 & 0 & 50 & 80 & 20 & 70 & 40\\
+		\hline
+		Skuteczność Maseczek & 70 & 0 & 30 & 50 & 90 & 10 & 60 & 30\\
+		\hline
+		Liczebność Populacji & 150 & 10& 30 & 100 & 50 & 20 & 120 & 80\\
+		\hline
+		Procent Zarażonych & 50 & 1 & 5 & 30 & 10 & 2 & 20 & 8\\
+		\hline
+		Odporność Populacji & 90 & 0 & 50 & 70 & 30 & 20 & 80 & 40\\
+		\hline
+		Długość Symulacji & 10 & 1 & 2 & 5 & 8 & 1 & 7 & 3\\
+		\hline
+		Średni czas wykrycia & 3 & 1 & 2 & 1 & 3 & 1 & 2 & 3\\
+		\hline
+	\end{tabular}
+	\label{tab:parameters}
+\end{table}
+
+
+
+
+
+
+
+\section{Wykryte i usunięte błędy}
+
+Zidentyfikowane i skorygowane błędy obejmują:
+\begin{itemize}
+	\item Po pierwszym cyklu dnia i nocy, stwierdzono kompletną utratę maseczek. Problem wynikał z braku wywołania funkcji \textit{ShowMask()} w metodzie inicjującej symulację po zakończeniu nocy.
+	\item Wystąpiły problemy z rezerwacją i zwalnianiem miejsc siedzących, gdzie agenci często próbowali zająć te same miejsca. Problem ten został rozwiązany poprzez wprowadzenie blokady w funkcji rezerwującej miejsca.
+	\item Po przeprowadzeniu rozmowy, agenci przestawali mieć jakiekolwiek interakcje z innymi. Spowodowane to było pominięciem wywołania metody zmniejszającej dystans zarażenia w funkcji obsługującej rozmowę.
+\end{itemize}
 
 %
 % znalezione błedy 
