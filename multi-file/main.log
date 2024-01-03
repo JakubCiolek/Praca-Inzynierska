@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  31 DEC 2023 00:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  3 JAN 2024 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1533,7 +1533,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
 (C:\Users\Kubotronic\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<graf/politechnika_sl_logo_bw_pion_pl.pdf, id=134, 179.67125pt x 230.8625pt>
+<graf/politechnika_sl_logo_bw_pion_pl.pdf, id=158, 179.67125pt x 230.8625pt>
 File: graf/politechnika_sl_logo_bw_pion_pl.pdf Graphic file (type pdf)
 <use graf/politechnika_sl_logo_bw_pion_pl.pdf>
 Package pdftex.def Info: graf/politechnika_sl_logo_bw_pion_pl.pdf  used on inpu
@@ -1657,7 +1657,7 @@ Overfull \hbox (7.54721pt too wide) in paragraph at lines 24--57
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<kseirscheme.png, id=244, 1087.81406pt x 411.03563pt>
+<kseirscheme.png, id=274, 1087.81406pt x 411.03563pt>
 File: kseirscheme.png Graphic file (type png)
 <use kseirscheme.png>
 Package pdftex.def Info: kseirscheme.png  used on input line 60.
@@ -1720,7 +1720,7 @@ Overfull \hbox (0.19933pt too wide) in paragraph at lines 118--119
 i¡-zek przyczynowo-skutkowy
  []
 
-<VirusIn3DSpaces.png, id=285, 1318.17468pt x 811.53188pt>
+<VirusIn3DSpaces.png, id=315, 1318.17468pt x 811.53188pt>
 File: VirusIn3DSpaces.png Graphic file (type png)
 <use VirusIn3DSpaces.png>
 Package pdftex.def Info: VirusIn3DSpaces.png  used on input line 127.
@@ -1738,12 +1738,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8{C:/Users/Kubotronic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.
 enc}]
-<biointeractiveSIR.png, id=300, 997.326pt x 732.93825pt>
+<biointeractiveSIR.png, id=330, 997.326pt x 732.93825pt>
 File: biointeractiveSIR.png Graphic file (type png)
 <use biointeractiveSIR.png>
 Package pdftex.def Info: biointeractiveSIR.png  used on input line 142.
 (pdftex.def)             Requested size: 364.19667pt x 267.64885pt.
-<biointeractiveSIR1.png, id=304, 674.52pt x 554.67226pt>
+<biointeractiveSIR1.png, id=334, 674.52pt x 554.67226pt>
 File: biointeractiveSIR1.png Graphic file (type png)
 <use biointeractiveSIR1.png>
 Package pdftex.def Info: biointeractiveSIR1.png  used on input line 150.
@@ -1812,7 +1812,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--138
 
  []
 
-<diagramModelu.png, id=353, 855.195pt x 296.307pt>
+<diagramModelu.png, id=383, 855.195pt x 296.307pt>
 File: diagramModelu.png Graphic file (type png)
 <use diagramModelu.png>
 Package pdftex.def Info: diagramModelu.png  used on input line 144.
@@ -1860,12 +1860,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Rozdzia\l  4.
 [19]
-<beforeSim.png, id=377, 925.65825pt x 454.69875pt>
+<beforeSim.png, id=407, 925.65825pt x 454.69875pt>
 File: beforeSim.png Graphic file (type png)
 <use beforeSim.png>
 Package pdftex.def Info: beforeSim.png  used on input line 47.
 (pdftex.def)             Requested size: 455.24411pt x 223.62997pt.
-<runningSimwithNumbers.png, id=378, 1536.74126pt x 748.7975pt>
+<runningSimwithNumbers.png, id=408, 1536.74126pt x 748.7975pt>
 File: runningSimwithNumbers.png Graphic file (type png)
 <use runningSimwithNumbers.png>
 Package pdftex.def Info: runningSimwithNumbers.png  used on input line 52.
@@ -1874,7 +1874,7 @@ Package pdftex.def Info: runningSimwithNumbers.png  used on input line 52.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<endSim.png, id=379, 921.4425pt x 454.69875pt>
+<endSim.png, id=409, 921.4425pt x 454.69875pt>
 File: endSim.png Graphic file (type png)
 <use endSim.png>
 Package pdftex.def Info: endSim.png  used on input line 57.
@@ -1882,7 +1882,7 @@ Package pdftex.def Info: endSim.png  used on input line 57.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<mapWithNumbers.png, id=380, 522.15076pt x 333.04425pt>
+<mapWithNumbers.png, id=410, 522.15076pt x 333.04425pt>
 File: mapWithNumbers.png Graphic file (type png)
 <use mapWithNumbers.png>
 Package pdftex.def Info: mapWithNumbers.png  used on input line 62.
@@ -1931,13 +1931,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-<DiagramAlgorytmuZachowania.png, id=412, 879.285pt x 774.64406pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]
+<DiagramKontaktu.png, id=454, 331.2375pt x 818.05624pt>
+File: DiagramKontaktu.png Graphic file (type png)
+<use DiagramKontaktu.png>
+Package pdftex.def Info: DiagramKontaktu.png  used on input line 85.
+(pdftex.def)             Requested size: 273.14923pt x 674.63011pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<DiagramAlgorytmuZachowania.png, id=457, 874.01532pt x 758.835pt>
 File: DiagramAlgorytmuZachowania.png Graphic file (type png)
 <use DiagramAlgorytmuZachowania.png>
-Package pdftex.def Info: DiagramAlgorytmuZachowania.png  used on input line 83.
-
-(pdftex.def)             Requested size: 455.24411pt x 401.05603pt.
-
+Package pdftex.def Info: DiagramAlgorytmuZachowania.png  used on input line 176
+.
+(pdftex.def)             Requested size: 455.24411pt x 395.25647pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1950,7 +1967,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
+[26]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1959,11 +1976,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26 <./DiagramAlgorytmuZachowania.png>]
-Rozdzia\l  6.
-) (chapters/07.tex [27
-
-]
+[27 <./DiagramKontaktu.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1973,10 +1986,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28]
-Rozdzia\l  7.
-) [29
-
-]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1985,16 +1994,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30
-
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-74.
- (C:\Users\Kubotronic\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [31
-
-]
+[29]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2003,17 +2003,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32] [33
+[30 <./DiagramAlgorytmuZachowania.png>]
 
-] [34] (chapters/08.tex
-Overfull \hbox (23.04156pt too wide) in paragraph at lines 5--6
-[]\T1/lmr/m/n/12 Suceptible, Expo-sed, In-fec-ted, Re-mo-ved (podatni-wystawien
-i-zainfekowani-ozdrowie«cy) 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32
+
+]
+Rozdzia\l  6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
  []
 
-) (chapters/09.tex [35
+) (chapters/07.tex [33]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34
 
 ]
+Rozdzia\l  7.
+) [35]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2024,24 +2054,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [36
 
-]) (chapters/10.tex [37]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[38
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+74.
+ (C:\Users\Kubotronic\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [37
 
 ]
-Overfull \hbox (2.38579pt too wide) in paragraph at lines 8--9
-[]\T1/lmr/m/n/12 film po-ka-zu-j¡cy dzia-ªa-nie opra-co-wa-nego opro-gra-mo-wa-
-nia lub za-pro-jek-to-wa-nego i wy-
- []
-
-) [39]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2050,13 +2070,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40
+[38] [39
 
-] (main.lof)
-\tf@lof=\write7
-\openout7 = `main.lof'.
+] [40] (chapters/08.tex
+Overfull \hbox (23.04156pt too wide) in paragraph at lines 5--6
+[]\T1/lmr/m/n/12 Suceptible, Expo-sed, In-fec-ted, Re-mo-ved (podatni-wystawien
+i-zainfekowani-ozdrowie«cy) 
+ []
 
- [41]
+) (chapters/09.tex [41
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2067,29 +2091,90 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [42
 
+]) (chapters/10.tex [43]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[44]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.35403pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.35403pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.35403pt}.
+
+[45]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[46]
+Overfull \hbox (2.38579pt too wide) in paragraph at lines 8--9
+[]\T1/lmr/m/n/12 film po-ka-zu-j¡cy dzia-ªa-nie opra-co-wa-nego opro-gra-mo-wa-
+nia lub za-pro-jek-to-wa-nego i wy-
+ []
+
+) [47
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[48
+
+] (main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ [49]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[50
+
 ] (main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [43] (main.aux)
+ [51] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 49FAD988E2A7D7679793BEB561B0ECD9;6341.
+(rerunfilecheck)             Checksum: 93C626475758C21E469556CFFF8BEA89;7535.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45220 strings out of 475247
- 1001177 string characters out of 5755431
- 1992785 words of memory out of 5000000
- 65862 multiletter control sequences out of 15000+600000
+ 45504 strings out of 475247
+ 1005427 string characters out of 5755431
+ 2103785 words of memory out of 5000000
+ 65945 multiletter control sequences out of 15000+600000
  628792 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,14n,92p,1954b,3256s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,14n,92p,1954b,3258s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Kubotronic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx
 12.pfb><C:/Users/Kubotronic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
 /lmcsc10.pfb><C:/Users/Kubotronic/AppData/Local/Programs/MiKTeX/fonts/type1/pub
@@ -2106,9 +2191,9 @@ Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Kubotronic/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Kubotro
 nic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Kub
 otronic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (49 pages, 2970923 bytes).
+Output written on main.pdf (57 pages, 3046556 bytes).
 PDF statistics:
- 663 PDF objects out of 1000 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
- 324 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 969 PDF objects out of 1000 (max. 8388607)
+ 342 named destinations out of 1000 (max. 500000)
+ 377 words of extra memory for PDF output out of 10000 (max. 10000000)
 

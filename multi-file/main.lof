@@ -18,9 +18,18 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Ekran zakończenia symulacji}}{21}{figure.caption.15}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa biura: 1. Biurka do pracy, 2. Kuchnia ze stolikami, 3. Miejsce wypoczynku}}{22}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sekwencyjny diagram algorytmu symulacji zachowań ludzkich}}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sekwencyjny diagram algorytmu kontaktu miedzy agentami}}{27}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Funkcja obsługująca początek kontaktu miedzy agentami.}}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Funkcja obsługująca koniec kontaktu miedzy agentami.}}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Funkcja wyliczająca szansę na rozwinięcie się choroby.}}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Sekwencyjny diagram algorytmu symulacji zachowań ludzkich}}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Funkcja wyliczająca szansę na rozwinięcie się choroby.}}{31}{figure.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Funkcja obsługująca początek kontaktu miedzy agentami.}}{44}{figure.caption.26}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Funkcja obsługująca koniec kontaktu miedzy agentami.}}{45}{figure.caption.27}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Funkcja wyliczająca szansę na rozwinięcie się choroby.}}{45}{figure.caption.28}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Funkcja wyliczająca szansę na rozwinięcie się choroby.}}{46}{figure.caption.29}%
 \addvspace {10\p@ }
