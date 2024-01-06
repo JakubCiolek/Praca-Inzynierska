@@ -107,17 +107,17 @@
 			}
 		}
 		
-		private void EndActivity()//wywolywana w funkcji Update()
+		private void EndActivity()
 		{
 			if(currentActivityEndTime < clock.GetHour())
 			{
-				currentSeat.SetOccupation(false);
+				ReleaseSeat();
 				StartActivity();
 			}
 		}
 	\end{lstlisting}
 	\caption{Funkcja wyliczająca szansę na rozwinięcie się choroby.}
-	%\label{fig:kod:Activity}
+	\label{fig:kod:Activity}
 \end{figure}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 

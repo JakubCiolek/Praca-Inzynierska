@@ -1,7 +1,7 @@
 \chapter{Modele symulacji rozprzestrzeniania się zarażeń}
 Symulacje komputerowe są niezwykle istotnym narzędziem badawczym, umożliwiającym przygotowanie się do różnych sytuacji kryzysowych oraz testowanie scenariuszy. To przyczynia się do lepszego zrozumienia i skutecznego zarządzania w przypadku wystąpienia lokalnych epidemii, co może przeciwdziałać ich przerodzeniu się w globalną pandemię.
 
-Aby skutecznie symulować rozprzestrzenianie się zarażeń, konieczne jest w pierwszej kolejności zrozumienie mechanizmów, które kierują postępującą zarazą. Początek naszej pracy powinien poprzedzić dogłębne zbadanie natury patogenu, jego zdolności i ograniczeń wynikających z procesów selekcji naturalnej. Wirus, aby przetrwać, musi zdolnością zarażania przewyższać zdolność zabijania, co sprowadza się do utrzymania współczynnika rozprzestrzeniania większego niż jeden. Dodatkowo, uwzględnienie okresu inkubacji jest kluczowe, ponieważ wirus potrzebuje czasu na rozmnożenie się w organizmie nosiciela.
+Aby skutecznie symulować rozprzestrzenianie się zarażeń, konieczne jest w pierwszej kolejności zrozumienie mechanizmów, które kierują postępującą zarazą. Wirus, aby przetrwać, musi zdolnością zarażania przewyższać zdolność zabijania, co sprowadza się do utrzymania współczynnika rozprzestrzeniania większego niż jeden. Dodatkowo, uwzględnienie okresu inkubacji jest kluczowe, ponieważ wirus potrzebuje czasu na rozmnożenie się w organizmie nosiciela.
 
 Jednakże, natura patogenu to tylko jeden z elementów, na które należy zwrócić uwagę w kontekście symulacji. Równie istotnym aspektem jest człowiek. Analiza funkcjonowania współczesnego społeczeństwa pomoże nam określić skalę, na jaką może rozprzestrzeniać się zaraza. Zrozumienie tego kontekstu umożliwi nam lepsze odzwierciedlenie rzeczywistości w modelowaniu.
 
@@ -11,8 +11,8 @@ Wzmożone prace w dziedzinie modelowania epidemiologicznego miały miejsce na po
 
 \section{\textbf{Modele bazujące na SIR}}
 
-We współczesnych badaniach często rozwija się model SIR tak aby mógł lepiej dokładniej odzwierciedlać rozprzestrzenianie się choroby. Takimi modyfikacjami najczęściej są dalsze podzielenie populacji na grupy czy dodanie dodatkowych czynników wpływających na zarazę. Jednym z takich modeli jest \textit {K-SEIR}
-\cite{bib:artykul} .
+We współczesnych badaniach często rozwija się model SIR, tak aby mógł lepiej dokładniej odzwierciedlać rozprzestrzenianie się choroby. Takimi modyfikacjami najczęściej są dalsze podzielenie populacji na grupy czy dodanie dodatkowych czynników wpływających na zarazę. Jednym z takich modeli jest \textit {K-SEIR}
+\cite{bib:artykul}.
 
 We wspomniany model rozszerza oryginalny SIR o dodatkową grupę \textit { E - Exposed (narażeni)} oraz dodaje czynnik \textit {K}, który określa działania przeciwdziałające zarazie podejmowane przez ludzi. Na podstawie modelu, dodatkowych parametrów oraz danych epidemiologicznych Covid-19 z miasta Wuhan zostały opracowane równania do matematycznego modelowania postępu rozprzestrzeniania się choroby, które autorzy przedstawili w tabeli\ref{tab:model_epidemiologiczny}.
 
@@ -61,15 +61,13 @@ We wspomniany model rozszerza oryginalny SIR o dodatkową grupę \textit { E - E
 	\caption{Schemat działania modelu  \textit {K-SEIR}\cite{bib:artykul} }
 \end{figure}
 
-Teoretyczny model K-SEIR został przekształcony w prosty oprogramowanie, zaimplementowane w języku PYTHON, przy użyciu inżynierii oprogramowania. W szczególności, ukończono zadania związane z projektowaniem interfejsu graficznego użytkownika, logiką sterowania, logiką operacji, kontrolą precyzji, kontrolą prędkości, wizualizacją danych, importem i eksportem danych, dopasowaniem parametrów, wyświetlaniem kluczowych danych oraz innymi konkretnymi treściami.
+Badacze przenieśli teoretyczny model \textit {K-SEIR} do praktyki, tworząc intuicyjne oprogramowanie w języku PYTHON. Szczególną uwagę zwrócili na projektowanie interfejsu graficznego użytkownika, logikę sterowania, operacje matematyczne, precyzję obliczeń, zarządzanie prędkością symulacji, czytelność wizualizacji danych, a także możliwość importu i eksportu danych. Udało im się dostarczyć narzędzie, które nie tylko efektywnie realizuje teoretyczny model, ale również jest przyjazne dla użytkownika, oferując intuicyjny interfejs, dostosowany do potrzeb użytkowników.
 \newpage
 \section{\textbf{Modele agentowe}}
 
 Modele agentowe stanowią komputerowe symulacje, w których agenci, reprezentujący różne jednostki, mogą wejść w interakcję między sobą. Agentami mogą być jednostki takie jak osoby, organizacje, a nawet obszary geograficzne, takie jak województwa czy kraje. Wzajemne oddziaływania między agentami są określone przez zdefiniowane zasady programowe. Każdy z agentów podejmuje decyzje indywidualnie, co może obejmować zarówno proste wybory, na przykład decyzję o kierunku ruchu, jak i bardziej złożone decyzje, takie jak znalezienie konkretnego innego agenta lub sekwencję zdarzeń. W kontekście symulacji zarażeń, tego typu podejście pozwala na realistyczne uwzględnienie nieprzewidywalnych decyzji, jakie może podjąć jednostka.
 
-Jeden z artykułów naukowych, poruszający temat modelowania agentowego, pod tytułem: \textit{,,An open-data-driven agent-based model to simulate infectious disease outbreaks''} \cite{bib:artykul1} dostarczy nam cennych informacji na  temat implementacji takich rozwiązań. 
-
-W artykule możemy przeczytać szczegółowe informacje na temat tego co badacze wzięli po uwagę podczas tworzenia swojego modelu.
+W artykule \cite{bib:artykul1}, poruszającym temat modelowania agentowego, możemy przeczytać szczegółowe informacje na temat tego co badacze wzięli po uwagę podczas tworzenia swojego modelu.
 był on oparty o dane populacji, umiejscowienia szkół i miejsc pracy a także danych dotyczących szczepień. Rzeczywiste dane są używane do określenia struktury wiekowej i płciowej naszych populacji, wraz z właściwym rozkładem wielkości gospodarstw domowych oraz innymi cechami takimi jak wiek dzieci. Następnie dane opisujące lokalizację szkół oraz miejsc pracy dają możliwość wiernego odwzorowania interakcji pomiędzy ludźmi. Na koniec aby ocenić podatność populacji na rozprzestrzenianie się choroby uwzględniono ilość szczepień (badanie opierało się na badaniu epidemii odry).
 Następnym krokiem badaczy było wybranie testowanego obszaru i podzielenie go na mniejsze jednostki, w których przebywający ludzie są uznawani za mający kontakt ze sobą. Później należało rozmieścić agentów w odpowiednich domach według danych o populacji. Na koniec należało uwzględnić dodatkowe czynniki między innymi transport. 
 Ostatnim krokiem było matematyczne opisane szans na zarażeniem, w tym celu autorzy wykorzystali równanie:
@@ -89,7 +87,7 @@ Poprzez przekształcenie równania otrzymano:
 $ p = \frac{R_0}{cd} $
 \end{center}
 
-Dodatkowo w scenariuszach testowych, w których brano pod uwagę szczepienia użyto dodatkowego równania. Jest ono oparte na odporność zbiorowej jednak zmodyfikowane aby uwzględniać skuteczność szczepionki:
+W scenariuszach testowych, w których brano pod uwagę szczepienia użyto dodatkowego równania. Jest ono oparte na odporność zbiorowej jednak zmodyfikowane aby uwzględniać skuteczność szczepionki:
 
 \begin{center}
 	$V_c = \frac{(1-\frac{1}{R_0})}{V_e}$

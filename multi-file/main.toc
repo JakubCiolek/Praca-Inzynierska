@@ -6,43 +6,40 @@
 \babel@toc {british}{}\relax 
 \babel@toc {polish}{}\relax 
 \thispagestyle {empty}
-\contentsline {chapter}{\numberline {1}Wstęp}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Modele symulacji rozprzestrzeniania się zarażeń}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\textbf {Modele bazujące na SIR}}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}\textbf {Modele agentowe}}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}\textbf {Inne aplikacje do symulacji zarażeń}}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}\textbf {EpiSimdemics - równoległy algorytm symulacji epidemii}}{7}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}\textbf {Zastosowanie rozszerzonej rzeczywistości w symulacji zarażeń}}{8}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}\textbf {Aplikacje dostępne w internecie i sklepach z aplikacjami}}{8}{subsection.2.3.3}%
-\contentsline {chapter}{\numberline {3}Wymagania i narzędzia}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}\textbf {Wymagania funkcjonalne i niefunkcjonalne}}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}\textbf {Wymagania funkcjonalne}}{11}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}\textbf {Wymagania niefunkcjonalne}}{13}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}\textbf {Wybrana technologia}}{14}{section.3.2}%
-\contentsline {section}{\numberline {3.3}\textbf {Model symulacji rozprzestrzeniania się zarażeń zastosowany w InfektoSym}}{14}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}\textbf {Równania opisujące model symulacji}}{15}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}\textbf {Symulacja zachowań ludzkich}}{16}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Specyfikacja zewnętrzna}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Opis Aplikacji}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Wymagania Sprzętowe}{19}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Wymagania Programowe}{19}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Obsługa Aplikacji}{19}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Uruchamianie Aplikacji}{20}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Specyfikacja wewnętrzna}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}\textbf {Przedstawienie idei}}{23}{section.5.1}%
-\contentsline {section}{\numberline {5.2}\textbf {Architektura systemu}}{24}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Biblioteki i moduły}{25}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}\textbf {Algorytmy}}{25}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Kontrola rozprzestrzeniania się choroby}{25}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Symulacja zachowań ludzkich}{26}{subsection.5.3.2}%
-\contentsline {chapter}{\numberline {6}Weryfikacja i walidacja}{29}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Sposoby testowania i organizacja eksperymentów}{29}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Przypadki testowe}{29}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Wykryte i usunięte błędy}{30}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Podsumowanie i wnioski}{33}{chapter.7}%
-\contentsline {chapter}{Bibliografia}{36}{chapter*.20}%
-\contentsline {chapter}{Spis skrótów i symboli}{39}{appendix*.21}%
-\contentsline {chapter}{Źródła}{41}{appendix*.22}%
-\contentsline {chapter}{Lista dodatkowych plików, uzupełniających tekst pracy}{45}{appendix*.27}%
-\contentsline {chapter}{Spis rysunków}{47}{appendix*.28}%
-\contentsline {chapter}{Spis tabel}{49}{appendix*.29}%
+\contentsline {chapter}{Wstęp}{2}{chapter*.8}%
+\contentsline {chapter}{\numberline {1}Modele symulacji rozprzestrzeniania się zarażeń}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}\textbf {Modele bazujące na SIR}}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}\textbf {Modele agentowe}}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}\textbf {Inne aplikacje do symulacji zarażeń}}{7}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}\textbf {EpiSimdemics - równoległy algorytm symulacji epidemii}}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}\textbf {Zastosowanie rozszerzonej rzeczywistości w symulacji zarażeń}}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}\textbf {Aplikacje dostępne w internecie i sklepach z aplikacjami}}{8}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Wymagania i narzędzia}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\textbf {Wymagania funkcjonalne i niefunkcjonalne}}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}\textbf {Wymagania funkcjonalne}}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}\textbf {Wymagania niefunkcjonalne}}{13}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}\textbf {Wybrana technologia}}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}\textbf {Model symulacji rozprzestrzeniania się zarażeń zastosowany w InfektoSym}}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}\textbf {Równania opisujące model symulacji}}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}\textbf {Symulacja zachowań ludzkich}}{16}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Specyfikacja zewnętrzna}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Wymagania}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Uruchamianie aplikacji}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Obsługa aplikacji}{20}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Specyfikacja wewnętrzna}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}\textbf {Architektura systemu}}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Biblioteki i moduły}{26}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}\textbf {Algorytmy}}{26}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Kontrola rozprzestrzeniania się choroby}{27}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Symulacja zachowań ludzkich}{27}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Weryfikacja i walidacja}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Sposoby testowania i organizacja eksperymentów}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Przypadki testowe}{31}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Wykryte i usunięte błędy}{32}{section.5.3}%
+\contentsline {chapter}{Podsumowanie i wnioski}{35}{chapter*.21}%
+\contentsline {chapter}{Bibliografia}{38}{chapter*.22}%
+\contentsline {chapter}{Spis skrótów i symboli}{41}{appendix*.23}%
+\contentsline {chapter}{Źródła}{43}{appendix*.24}%
+\contentsline {chapter}{Lista dodatkowych plików, uzupełniających tekst pracy}{47}{appendix*.29}%
+\contentsline {chapter}{Spis rysunków}{49}{appendix*.30}%
+\contentsline {chapter}{Spis tabel}{51}{appendix*.31}%

@@ -8,30 +8,30 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 W niniejszym rozdziale Specyfikacji Wewnętrznej dokładnie omówione zostaną kluczowe elementy związane z implementacją projektu. Zaprezentowana będzie architektura systemu, opisane zostaną użyte biblioteki i moduły, przedstawione zastosowane algorytmy, a także zamieszczone zostaną diagramy sekwencyjne, fragmenty kodu oraz idea, która kierowała procesem tworzenia aplikacji. Celem tego rozdziału jest szczegółowe przybliżenie struktury wewnętrznej projektu, zrozumienie jego komponentów oraz logiki działania.
 
-\section{\textbf{Przedstawienie idei}}
-
-Aplikacja Infektosym jest narzędziem symulacyjnym, które zostało stworzone z myślą o zrozumieniu i analizie rozprzestrzeniania się zarażeń w przestrzeni biurowej. Głównym celem projektu jest dostarczenie interaktywnej platformy umożliwiającej obserwację, analizę oraz testowanie scenariuszy związanych z potencjalnymi wirusowymi infekcjami w środowisku pracy.
-
-\begin{itemize}
-	\item \textbf{Cele Projektu:}
-	\begin{itemize}
-		\item Zapewnienie realistycznego modelu symulacji, uwzględniającego codzienne zachowania ludzkie w biurze.
-		\item Możliwość dostosowywania parametrów symulacji, takich jak dystans zarażenia, czas do zarażenia czy skuteczność maseczek.
-		\item Wizualizacja procesu rozprzestrzeniania się patogenów w czasie rzeczywistym.
-	\end{itemize}
-	\item \textbf{Koncepcje i Założenia:}
-	\begin{itemize}
-		\item Implementacja agentowego podejścia, gdzie każdy osobnik w symulacji podejmuje indywidualne decyzje i reaguje na otoczenie.
-		\item Duża parametryzacja symulacji, umożliwiająca dostosowanie scenariuszy do różnych warunków i kontekstów.
-	\end{itemize}
-	\item \textbf{Kierunki Rozwoju:}
-	\begin{itemize}
-		\item Wprowadzenie zaawansowanych funkcji interakcji między agentami, uwzględniających bardziej złożone scenariusze zachowań.
-		\item Integracja z danymi epidemiologicznymi dla bardziej precyzyjnych analiz i prognoz.
-		\item Dalsza optymalizacja interfejsu użytkownika i dostępność na różnych platformach.
-		\item Wprowadzenie innych scenariuszy np. Szpital, Osiedle, Centrum Handlowe.
-	\end{itemize}
-\end{itemize}
+%\section{\textbf{Przedstawienie idei}}
+%
+%Aplikacja Infektosym jest narzędziem symulacyjnym, które zostało stworzone z myślą o zrozumieniu i analizie rozprzestrzeniania się zarażeń w przestrzeni biurowej. Głównym celem projektu jest dostarczenie interaktywnej platformy umożliwiającej obserwację, analizę oraz testowanie scenariuszy związanych z potencjalnymi wirusowymi infekcjami w środowisku pracy.
+%
+%\begin{itemize}
+%	\item \textbf{Cele Projektu:}
+%	\begin{itemize}
+%		\item Zapewnienie realistycznego modelu symulacji, uwzględniającego codzienne zachowania ludzkie w biurze.
+%		\item Możliwość dostosowywania parametrów symulacji, takich jak dystans zarażenia, czas do zarażenia czy skuteczność maseczek.
+%		\item Wizualizacja procesu rozprzestrzeniania się patogenów w czasie rzeczywistym.
+%	\end{itemize}
+%	\item \textbf{Koncepcje i Założenia:}
+%	\begin{itemize}
+%		\item Implementacja agentowego podejścia, gdzie każdy osobnik w symulacji podejmuje indywidualne decyzje i reaguje na otoczenie.
+%		\item Duża parametryzacja symulacji, umożliwiająca dostosowanie scenariuszy do różnych warunków i kontekstów.
+%	\end{itemize}
+%	\item \textbf{Kierunki Rozwoju:}
+%	\begin{itemize}
+%		\item Wprowadzenie zaawansowanych funkcji interakcji między agentami, uwzględniających bardziej złożone scenariusze zachowań.
+%		\item Integracja z danymi epidemiologicznymi dla bardziej precyzyjnych analiz i prognoz.
+%		\item Dalsza optymalizacja interfejsu użytkownika i dostępność na różnych platformach.
+%		\item Wprowadzenie innych scenariuszy np. Szpital, Osiedle, Centrum Handlowe.
+%	\end{itemize}
+%\end{itemize}
 
 \section{\textbf{Architektura systemu}}
 
@@ -68,6 +68,10 @@ Architektura systemu aplikacji opiera się na modularnym podejściu, skupiający
 	\item \textbf{SeatScript:}
 	\begin{itemize}
 		\item Prosty skrypt odpowiedzialny za zarządzanie miejscami siedzącymi, informując, czy dane miejsce jest zajęte czy wolne.
+	\end{itemize}
+	\item \textbf{GameOverScript:}
+	\begin{itemize}
+		\item Prosty skrypt odpowiedzialny pokazanie ekranu końcowego z odpowiednimi wynikami i parametrami symulacji.
 	\end{itemize}
 \end{itemize}
 

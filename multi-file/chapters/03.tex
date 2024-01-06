@@ -9,53 +9,56 @@
 Rozdział omawia kluczowe aspekty dotyczące aplikacji do symulowania rozprzestrzeniania się zarażeń o nazwie \textit{InfektoSym}. Rozpocznie się analizy i przedstawienia wymagań funkcjonalnych oraz niefunkcjonalnych. Następnie przybliży technologie wykorzystane w aplikacji. Dodatkowo, dokładnie wyjaśni działanie zaimplementowanego modelu symulacji rozprzestrzeniania się choroby, a także w jaki sposób aplikacja oddziałuje z użytkownikiem i jakie rezultaty może dostarczyć. Ten rozdział stanowi istotne wprowadzenie do zrozumienia zarówno technicznego, jak i funkcjonalnego aspektu projektu.
 
 \section{\textbf{Wymagania funkcjonalne i niefunkcjonalne}}
+
+Skoncentrowano się na opracowaniu symulacji, ze szczególnym naciskiem na środowisko budynków. Taka decyzja wynika z faktu, że ludzie spędzają większość swojego czasu w budynkach, a duże zagęszczenie populacji w takich miejscach stwarza optymalne warunki dla rozprzestrzeniania się chorób.
+
 \subsection{\textbf{Wymagania funkcjonalne}}
 \begin{itemize}
-	\item \textbf{ Symulacja Ruchu i Interakcji:}
+	\item \textbf{ Symulacja ruchu i interakcji:}
 	
 	Aplikacja pozwala na śledzenie trajektorii ruchu każdej postaci w biurze w czasie rzeczywistym.
 	Interakcje pomiędzy postaciami są symulowane z uwzględnieniem różnych scenariuszy, takich jak rozmowy, wspólna praca, czy przerwy.
 	W momencie, gdy jedna postać zostaje zarażona, aplikacja monitoruje, czy i jak szybko choroba rozprzestrzenia się na inne postacie poprzez ich bezpośrednie kontakty.
-	\item \textbf{Wizualizacja Stanów Zdrowia:}
+	\item \textbf{Wizualizacja stanów zdrowia:}
 	
 	Na ekranie widoczne są dynamiczne wskaźniki zdrowia każdej postaci, pozwalające użytkownikowi śledzić ich aktualny stan (zdrowy, narażony, zarażony).
 	Symulacja obejmuje także wizualizację okresów inkubacji oraz wyzdrowienia, umożliwiając obserwację zmian stanów zdrowia w czasie rzeczywistym.
-	\item \textbf{Monitorowanie Kontaktów i Narażenia:}
+	\item \textbf{Monitorowanie kontaktów i narażenia:}
 	
 	Aplikacja zbiera dane dotyczące kontaktów pomiędzy postaciami, identyfikując te, które mogą prowadzić do potencjalnego zarażenia.
 	Wizualizacja narażeń obejmuje różne aspekty, takie jak dystans, czas trwania kontaktu oraz ewentualne zastosowane środki ochrony osobistej.
-	\item \textbf{Wariacje Scenariuszy:}
+	\item \textbf{Wariacje scenariuszy:}
 	
 	Aplikacja umożliwia eksperymentowanie z różnymi scenariuszami zarażenia poprzez dostosowanie parametrów symulacji. Użytkownik może modyfikować takie czynniki jak dystans zarażenia, czas do zarażenia, czy skuteczność maseczek, co pozwala na badanie wpływu tych parametrów na proces rozprzestrzeniania się infekcji w przestrzeni biurowej.
 
-	\item \textbf{Wysoce Parametryzowalna Symulacja:}
+	\item \textbf{Wysoce parametryzowalna symulacja:}
 	\begin{enumerate}
-		\item \textbf{Dystans Zarażenia:}
+		\item \textbf{Dystans zarażenia:}
 		
 		Użytkownik ma możliwość określenia maksymalnego dystansu, na jakim wirus może się przenosić między agentami.
-		\item \textbf{Czas do Zarażenia:}
+		\item \textbf{Czas do zarażenia:}
 		
 		Określenie czasu, jaki musi upłynąć w bliskim kontakcie z zarażoną postacią, aby doszło do zarażenia.
 		\item \textbf{Zaraźliwość Patogenu:}
 		
 		Parametr definiujący zdolność wirusa do zarażania innych postaci w danym środowisku symulacyjnym.
-		\item \textbf{Średni Okres Inkubacji:}
+		\item \textbf{Średni okres inkubacji:}
 		
 		Ustalenie czasu, jaki upływa od momentu zarażenia do pojawienia się objawów u zarażonej postaci.
 		\item \textbf{Procent Populacji Noszący Maseczki:}
 		
 		Możliwość określenia odsetka populacji, który stosuje ochronę w postaci noszenia maseczek.
-		\item \textbf{Skuteczność Maseczek:}
+		\item \textbf{Skuteczność maseczek:}
 		
 		Parametr określający, o ile procent zmniejsza się dystans zarażenia dla osób noszących maseczki.
-		\item \textbf{Liczebność Populacji:}
+		\item \textbf{Liczebność populacji:}
 		
 		Określenie ogólnej liczby postaci uczestniczących w symulacji.
 		
 		\item \textbf{Początkowy Procent Zarażonych:}
 		
 		Określenie procentowej liczby zarażonych w początkowej populacji.
-		\item \textbf{Odporność Populacji:}
+		\item \textbf{Odporność populacji:}
 		
 		Ustalenie procenta populacji posiadającego naturalną odporność na wirusa.
 		\item \textbf{Długość Symulacji:}
@@ -75,21 +78,21 @@ Rozdział omawia kluczowe aspekty dotyczące aplikacji do symulowania rozprzestr
 \end{itemize}
 \subsection{\textbf{Wymagania niefunkcjonalne}}
 \begin{itemize}
-	\item\textbf{  Intuicyjny Interfejs:}
+	\item\textbf{  Intuicyjny interfejs:}
 	
 	Interfejs użytkownika powinien być zaprojektowany w sposób intuicyjny, umożliwiając łatwe poruszanie się po aplikacji i korzystanie z jej funkcji. Elementy graficzne, przyciski i opcje powinny być jasne i zrozumiałe dla użytkownika końcowego.
 	\item\textbf{ Stabilność:}
 	
 	Aplikacja powinna charakteryzować się stabilnością działania, eliminując nieoczekiwane błędy, które mogą prowadzić do awarii. Wszystkie funkcje aplikacji powinny działać zgodnie z oczekiwaniami, zapewniając płynne doświadczenie użytkownika.
-	\item\textbf{ Odporność na Awarie:}
+	\item\textbf{ Odporność na awarie:}
 	
 	Aplikacja powinna być odporne na awarie poprzez implementację mechanizmów zabezpieczających, takich jak obsługa błędów, przywracanie stanu aplikacji po awarii, oraz minimalizacja wpływu awarii na całość systemu.
 	
-	\item \textbf{Płynność Symulacji:}
+	\item \textbf{Płynność symulacji:}
 	
 	Aplikacja powinna zapewniać płynną symulację nawet przy dużej ilości agentów uczestniczących w scenariuszu. Optymalizacje i zoptymalizowany kod powinny umożliwiać utrzymanie odpowiedniej prędkości symulacji, niezależnie od skomplikowania scenariusza.
 	
-	\item\textbf{ Responsywność Interfejsu:}
+	\item\textbf{ Responsywność interfejsu:}
 	
 	Interfejs użytkownika powinien reagować szybko na akcje użytkownika, zapewniając natychmiastowe odpowiedzi na interakcje, co przyczyni się do lepszego doświadczenia użytkownika.
 \end{itemize}
@@ -149,13 +152,13 @@ Osoba zakażona jest usuwana z symulacji po czasie $T_{wykrycia} \pm 24$ godziny
 W ramach symulacji zachowań ludzkich w aplikacji, agenci mają zdefiniowane konkretne czynności, które mogą wykonywać. Poniżej przedstawiono proces realizacji tych aktywności (poniższe wartości czasowe odnoszą się do czasu symulacji):
 
 \begin{itemize}
-	\item \textbf{Początkowe Losowanie:}
+	\item \textbf{Początkowe losowanie:}
 	\begin{itemize}
 		\item Kiedy agent pojawiając się w symulacji, losuje jedną z czterech podstawowych akcji: losowe spacerowanie, praca, przerwa lub lunch.
 		\item Każda akcja(oprócz losowego spacerowania) trwa od 1 do 4 godzin.
 	\end{itemize}
 	
-	\item \textbf{Zmiana Akcji:}
+	\item \textbf{Zmiana akcji:}
 	\begin{itemize}
 		\item Po zakończeniu aktualnej akcji, agent wybiera nową spośród losowego spacerowania, pracy, przerwy lub lunchu.
 		\item Ten proces powtarza się, co pozwala agentowi na cykliczne zmiany działań.
@@ -167,7 +170,7 @@ W ramach symulacji zachowań ludzkich w aplikacji, agenci mają zdefiniowane kon
 		\item Rozmowa trwa od 10 minut do 1 godziny, a po jej zakończeniu agent wybiera nową akcję.
 	\end{itemize}
 	
-	\item \textbf{Praca, Odpoczynek i Lunch:}
+	\item \textbf{Praca, odpoczynek i lunch:}
 	\begin{itemize}
 		\item Jeśli agent zdecyduje się pracować, odpoczywać lub coś zjeść sprawdza dostępność odpowiednio biurek, miejsc na kanapie, stolików w kuchni.
 		\item Siada przy pierwszym wolnym miejscu i wykonuje czynność od 1 do 4 godzin, po czym wybiera nową akcję.

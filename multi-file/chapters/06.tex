@@ -20,13 +20,13 @@ W ramach przeprowadzonych testów aplikacji dokonano ręcznego dostosowania para
 Tabela \ref{tab:parameters} przedstawia różnorodne przypadki testowe dla parametrów symulacji w aplikacji. Testy zostały zaplanowane w celu sprawdzenia zachowania symulacji w ekstremalnych warunkach oraz w warunkach typowych. Poniżej znajduje się krótki opis każdego testu:
 
 \begin{itemize}
-	\item \textbf{Test 1 (Maksymalne Wartości):} Ten test uwzględnia maksymalne wartości dla każdego z parametrów symulacji. Jest to scenariusz ekstremalny, mający na celu zidentyfikowanie, czy aplikacja poprawnie obsługuje ekstremalne warunki, takie jak bardzo zaraźliwe środowisko, długi czas inkubacji czy duża liczba populacji.
+	\item \textbf{Test 1 (Maksymalne wartości):} Ten test uwzględnia maksymalne wartości dla każdego z parametrów symulacji. Jest to scenariusz ekstremalny, mający na celu zidentyfikowanie, czy aplikacja poprawnie obsługuje ekstremalne warunki, takie jak bardzo zaraźliwe środowisko, długi czas inkubacji czy duża liczba populacji.
 
-	\item \textbf{Test 2 (Minimalne Wartości):} W tym teście wszystkie parametry przyjmują minimalne wartości. Celem jest sprawdzenie, czy aplikacja jest odporna na sytuacje, w których czynniki zakaźne są minimalne, a populacja jest ograniczona.
+	\item \textbf{Test 2 (Minimalne wartości):} W tym teście wszystkie parametry przyjmują minimalne wartości. Celem jest sprawdzenie, czy aplikacja jest odporna na sytuacje, w których czynniki zakaźne są minimalne, a populacja jest ograniczona.
 	
-	\item \textbf{Test3 (Wartości Domyślne):} Test ten obejmuje wartości domyślne dla wszystkich parametrów symulacji. Stanowi punkt odniesienia, w którym sprawdzane jest standardowe zachowanie symulacji.
+	\item \textbf{Test3 (Wartości domyślne):} Test ten obejmuje wartości domyślne dla wszystkich parametrów symulacji. Stanowi punkt odniesienia, w którym sprawdzane jest standardowe zachowanie symulacji.
 	
-	\item \textbf{Testy 4 - 8 (Losowe Wartości):}
+	\item \textbf{Testy 4 - 8 (Losowe wartości):}
 	 Pozostałe testy obejmują losowo wybrane wartości parametrów symulacji. Te przypadki mają na celu ocenę ogólnej elastyczności i skuteczności aplikacji w zróżnicowanych warunkach. Wartości te zostały dobrane w celu odtworzenia różnorodnych scenariuszy, które mogą wystąpić w rzeczywistych warunkach.
 \end{itemize}
 	
@@ -64,18 +64,13 @@ Tabela \ref{tab:parameters} przedstawia różnorodne przypadki testowe dla param
 \end{table}
 
 
-
-
-
-
-
 \section{Wykryte i usunięte błędy}
 
 Zidentyfikowane i skorygowane błędy obejmują:
 \begin{itemize}
 	\item Po pierwszym cyklu dnia i nocy, stwierdzono kompletną utratę maseczek. Problem wynikał z braku wywołania funkcji \textit{ShowMask()} w metodzie inicjującej symulację po zakończeniu nocy.
-	\item Wystąpiły problemy z rezerwacją i zwalnianiem miejsc siedzących, gdzie agenci często próbowali zająć te same miejsca. Problem ten został rozwiązany poprzez wprowadzenie blokady w funkcji rezerwującej miejsca.
-	\item Po przeprowadzeniu rozmowy, agenci przestawali mieć jakiekolwiek interakcje z innymi. Spowodowane to było pominięciem wywołania metody zmniejszającej dystans zarażenia w funkcji obsługującej rozmowę.
+	\item Wystąpiły problemy z rezerwacją i zwalnianiem miejsc siedzących, gdzie agenci często próbowali zająć te same miejsca. Problem ten został poprzez zmianę logiki stojącej za mechanizmem. Zamiast przechowywania zajętego miejsca przez człowieka, teraz to siedzenie przechowuje informacje, o tym który człowiek na nim siedzi.
+	\item Po przeprowadzeniu rozmowy, agenci przestawali mieć jakiekolwiek interakcje z innymi. Spowodowane to było omyłkowym wywołaniem metody zmniejszającej dystans zarażenia w funkcji obsługującej rozmowę.
 \end{itemize}
 
 %
