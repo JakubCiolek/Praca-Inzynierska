@@ -98,6 +98,29 @@
     \field{year}{2008}
   \endentry
 
+  \entry{bib:BioInteractiveApp}{online}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={BioInteractive},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Modeling Disease Spread}
+    \verb{url}
+    \verb https://www.biointeractive.org/classroom-resources/modeling-disease-s
+    \verb pread
+    \endverb
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
+  \endentry
+
   \entry{bib:Brockmann2017Global}{incollection}{}
     \name{author}{1}{}{%
       {{hash=BD}{%
@@ -430,37 +453,6 @@
     \verb{url}
     \verb https://play.google.com/store/apps/details?id=com.kopecsec.EpidemicSi
     \verb mulator&hl=pl&gl=US
-    \endverb
-    \field{urlday}{30}
-    \field{urlmonth}{12}
-    \field{urlyear}{2023}
-  \endentry
-
-  \entry{bib:BioInteractiveApp}{online}{}
-    \name{author}{2}{}{%
-      {{hash=NI}{%
-         family={Nazwisko},
-         familyi={N\bibinitperiod},
-         given={Imię},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=NI}{%
-         family={Nazwisko},
-         familyi={N\bibinitperiod},
-         given={Imię},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{NINI1}
-    \strng{fullhash}{NINI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
-    \field{title}{Modeling Disease Spread}
-    \verb{url}
-    \verb https://www.biointeractive.org/classroom-resources/modeling-disease-s
-    \verb pread
     \endverb
     \field{urlday}{30}
     \field{urlmonth}{12}

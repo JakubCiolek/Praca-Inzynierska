@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  6 JAN 2024 20:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  7 JAN 2024 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1619,12 +1619,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2]
 Rozdzia\l  1.
-
-Overfull \hbox (2.03564pt too wide) in paragraph at lines 10--11
-\T1/lmr/m/n/12 cz¡tku XX wieku, przez ta-kich ba-da-czy jak Ro-nald Ross[[]15[]
-] i Hilda Pho-ebe Hud-son[[]13[]][[]14[]].
- []
-
 [3
 
 ]
@@ -1699,9 +1693,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
+Overfull \hbox (9.00415pt too wide) in paragraph at lines 105--106
+[]\T1/lmr/m/n/12 Podsumowuj¡c, prze-wag¡ mo-deli agen-to-wych nad mo-de-lami ta
+-kimi jak SIR jest uwzgl¦d-
+ []
+
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 14.
- (C:\Users\Kubotronic\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+(C:\Users\Kubotronic\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
@@ -1712,13 +1711,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[7{C:/Users/Kubotronic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.
+enc}]
 Overfull \hbox (0.19933pt too wide) in paragraph at lines 116--117
 []\T1/lmr/m/n/12 sekwencji ak-tu-ali-za-cji lub har-mo-no-gramu, ta-kiego »e zw
 i¡-zek przyczynowo-skutkowy
  []
 
-<VirusIn3DSpaces.png, id=310, 1318.17468pt x 811.53188pt>
+<VirusIn3DSpaces.png, id=311, 1318.17468pt x 811.53188pt>
 File: VirusIn3DSpaces.png Graphic file (type png)
 <use VirusIn3DSpaces.png>
 Package pdftex.def Info: VirusIn3DSpaces.png  used on input line 125.
@@ -1734,8 +1734,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8{C:/Users/Kubotronic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.
-enc}]
+[8]
 <biointeractiveSIR.png, id=326, 997.326pt x 732.93825pt>
 File: biointeractiveSIR.png Graphic file (type png)
 <use biointeractiveSIR.png>
@@ -2056,14 +2055,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36
-
-]
+[36]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 76.
  (C:\Users\Kubotronic\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [37
+
 
 ]
 
@@ -2122,13 +2120,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
-Overfull \hbox (2.38579pt too wide) in paragraph at lines 8--9
-[]\T1/lmr/m/n/12 film po-ka-zu-j¡cy dzia-ªa-nie opra-co-wa-nego opro-gra-mo-wa-
-nia lub za-pro-jek-to-wa-nego i wy-
- []
-
-) [47
+[46]) [47
 
 ]
 
@@ -2172,10 +2164,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45410 strings out of 475247
- 1004059 string characters out of 5755431
+ 45399 strings out of 475247
+ 1003919 string characters out of 5755431
  2099785 words of memory out of 5000000
- 65948 multiletter control sequences out of 15000+600000
+ 65937 multiletter control sequences out of 15000+600000
  628792 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,14n,92p,1954b,3254s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2195,7 +2187,7 @@ Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Kubotronic/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Kubotro
 nic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Kub
 otronic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (57 pages, 3025459 bytes).
+Output written on main.pdf (57 pages, 3025888 bytes).
 PDF statistics:
  852 PDF objects out of 1000 (max. 8388607)
  245 named destinations out of 1000 (max. 500000)

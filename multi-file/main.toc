@@ -36,7 +36,7 @@
 \contentsline {section}{\numberline {5.1}Sposoby testowania i organizacja eksperymentów}{31}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Przypadki testowe}{31}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Wykryte i usunięte błędy}{32}{section.5.3}%
-\contentsline {chapter}{Podsumowanie i wnioski}{35}{chapter*.21}%
+\contentsline {chapter}{Podsumowanie i wnioski}{36}{chapter*.21}%
 \contentsline {chapter}{Bibliografia}{38}{chapter*.22}%
 \contentsline {chapter}{Spis skrótów i symboli}{41}{appendix*.23}%
 \contentsline {chapter}{Źródła}{43}{appendix*.24}%
