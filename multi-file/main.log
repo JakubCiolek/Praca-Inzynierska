@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  7 JAN 2024 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  8 JAN 2024 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1854,6 +1854,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Rozdzia\l  3.
 [19]
+<mapWithNumbers.png, id=407, 522.15076pt x 333.04425pt>
+File: mapWithNumbers.png Graphic file (type png)
+<use mapWithNumbers.png>
+Package pdftex.def Info: mapWithNumbers.png  used on input line 38.
+(pdftex.def)             Requested size: 455.24411pt x 290.38138pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1862,41 +1868,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
-Overfull \hbox (7.64143pt too wide) in paragraph at lines 86--88
+[20 <./mapWithNumbers.png (PNG copy)>]
+Overfull \hbox (7.64143pt too wide) in paragraph at lines 95--97
 \T1/lmr/m/n/12 Ko«czy sy-mu-la-cj¦. Usuwa wszyst-kich agen-tów, po uru-cho-mie-
 niu sy-mu-la-cji agenci
  []
 
-<beforeSim.png, id=415, 925.65825pt x 454.69875pt>
+<beforeSim.png, id=416, 925.65825pt x 454.69875pt>
 File: beforeSim.png Graphic file (type png)
 <use beforeSim.png>
-Package pdftex.def Info: beforeSim.png  used on input line 98.
+Package pdftex.def Info: beforeSim.png  used on input line 100.
 (pdftex.def)             Requested size: 455.24411pt x 223.62997pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<runningSimwithNumbers.png, id=416, 1536.74126pt x 748.7975pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+<runningSimwithNumbers.png, id=423, 1536.74126pt x 748.7975pt>
 File: runningSimwithNumbers.png Graphic file (type png)
 <use runningSimwithNumbers.png>
-Package pdftex.def Info: runningSimwithNumbers.png  used on input line 104.
+Package pdftex.def Info: runningSimwithNumbers.png  used on input line 112.
 (pdftex.def)             Requested size: 455.24411pt x 221.81883pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<endSim.png, id=417, 1154.06157pt x 567.62062pt>
+<endSim.png, id=424, 1154.06157pt x 567.62062pt>
 File: endSim.png Graphic file (type png)
 <use endSim.png>
-Package pdftex.def Info: endSim.png  used on input line 110.
+Package pdftex.def Info: endSim.png  used on input line 118.
 (pdftex.def)             Requested size: 455.24411pt x 223.90886pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<mapWithNumbers.png, id=418, 522.15076pt x 333.04425pt>
-File: mapWithNumbers.png Graphic file (type png)
-<use mapWithNumbers.png>
-Package pdftex.def Info: mapWithNumbers.png  used on input line 116.
-(pdftex.def)             Requested size: 455.24411pt x 290.38138pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1909,7 +1917,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]
+[22 <./beforeSim.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1918,16 +1926,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22 <./beforeSim.png> <./runningSimwithNumbers.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23 <./endSim.png> <./mapWithNumbers.png (PNG copy)>]
+[23 <./runningSimwithNumbers.png> <./endSim.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1950,7 +1949,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26]
-<DiagramKontaktu.png, id=454, 331.2375pt x 818.05624pt>
+<DiagramKontaktu.png, id=455, 331.2375pt x 818.05624pt>
 File: DiagramKontaktu.png Graphic file (type png)
 <use DiagramKontaktu.png>
 Package pdftex.def Info: DiagramKontaktu.png  used on input line 89.
@@ -1959,7 +1958,7 @@ Package pdftex.def Info: DiagramKontaktu.png  used on input line 89.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<DiagramAlgorytmuZachowania.png, id=457, 874.01532pt x 758.835pt>
+<DiagramAlgorytmuZachowania.png, id=458, 874.01532pt x 758.835pt>
 File: DiagramAlgorytmuZachowania.png Graphic file (type png)
 <use DiagramAlgorytmuZachowania.png>
 Package pdftex.def Info: DiagramAlgorytmuZachowania.png  used on input line 98.
@@ -2120,9 +2119,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]) [47
+[46
 
-]
+]) [47]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2187,9 +2186,9 @@ Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Kubotronic/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Kubotro
 nic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Kub
 otronic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (57 pages, 3025888 bytes).
+Output written on main.pdf (57 pages, 3026516 bytes).
 PDF statistics:
- 852 PDF objects out of 1000 (max. 8388607)
+ 853 PDF objects out of 1000 (max. 8388607)
  245 named destinations out of 1000 (max. 500000)
  369 words of extra memory for PDF output out of 10000 (max. 10000000)
 

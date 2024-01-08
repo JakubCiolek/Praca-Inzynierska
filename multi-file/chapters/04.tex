@@ -31,22 +31,31 @@ Aplikacja uruchomi się bez konieczności instalacji.
 
 Do obsługi aplikacji wystarczy myszka, która umożliwia interakcję z interfejsem graficznym. Aplikacja nie wymaga dodatkowego sprzętu.
 \begin{itemize}
+	\item \textbf{Wizualizacja}\\
+	Graficzne przedstawienie symulacji znajduje się po lewej stronie okna aplikacji. Mapa biura, odzwierciedla przestrzeń do pracy, kuchnię oraz miejsce wypoczynku. Szczegółowy opis mapy i jej poszczególnych elementów znajduje się na rysunku \ref{fig:simMap}.
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{mapWithNumbers.png}
+		\caption{Mapa biura: 1. Biurka do pracy, 2. Kuchnia ze stolikami, 3. Miejsce wypoczynku}
+		\label{fig:simMap}
+	\end{figure}
+	
 	\item \textbf{Ustawianie Parametrów Symulacji}
 	
-	Dostosowywanie parametrów odbywa się poprzez ustawianie suwaków znajdujących się z prawej strony (widocznych na rysunku \ref{fig:beforeSim} przy numerze pierwszym) za pomocą myszki. Parametry należy ustawić przed rozpoczęciem symulacji, ich zmiana w jej trakcie nie wpłynie na jej przebieg, a nowe ustawienia zostaną wprowadzone dopiero po restarcie symulacji. Wyjątkiem jest prędkość symulacji, którą można zmieniać w trakcie działania programu.\\
+	Dostosowywanie parametrów odbywa się poprzez ustawianie suwaków znajdujących się z prawej strony (widocznych na rysunku \ref{fig:runningSim} przy numerze pierwszym) za pomocą myszki. Parametry należy ustawić przed rozpoczęciem symulacji, ich zmiana w jej trakcie nie wpłynie na jej przebieg, a nowe ustawienia zostaną wprowadzone dopiero po restarcie symulacji. Wyjątkiem jest prędkość symulacji, którą można zmieniać w trakcie działania programu.\\
 	\textbf{Lista dostępnych parametrów:}
 	\begin{itemize}
 		\item \textbf{Dystans zarażenia:}\\
 		 Dystans przenoszenia się wirusa.
 		
 		\item \textbf{Czas do zarażenia:}\\
-		 Długość bliskiego kontaktu z chorym, aby doszło do zarażenia.
+		 Czas(minuty) bliskiego kontaktu z chorym, aby doszło do zarażenia.
 
 		\item \textbf{Zaraźliwość patogenu:}\\
 		 Zdolność wirusa do zarażania.
 		
 		\item \textbf{Średni okres inkubacji:}\\
-		Czas od narażenia do rozwinięcia się objawów.
+		 Czas(dni) od narażenia do rozwinięcia się objawów.
 
 		\item \textbf{Procent populacji noszący maseczki:}\\
 		Procentowa ilość ludzi noszących maseczki.
@@ -70,11 +79,11 @@ Do obsługi aplikacji wystarczy myszka, która umożliwia interakcję z interfej
 		Umożliwienie regulacji prędkości symulacji, włączając przyspieszenie do 100-krotności normalnej prędkości.
 		
 		\item \textbf{Średni czas wykrycia:}\\
-		Czas jaki upływa od momentu pojawienia się objawów do ich wykrycia i zlecenia kwarantanny.
+		Czas(dni) jaki upływa od momentu pojawienia się objawów do ich wykrycia i zlecenia kwarantanny.
 	\end{itemize}
 	
 	\item \textbf{Rozpoczęcie symulacji i jej kontrola}\\
-	Do kontroli symulacji służą przyciski widoczne na rysunku \ref{fig:beforeSim} przy numerze drugim. Są to \textit{Start}, \textit{Pauza} i \textit{Restart}. 
+	Do kontroli symulacji służą przyciski widoczne na rysunku \ref{fig:runningSim} przy numerze drugim. Są to \textit{Start}, \textit{Pauza} i \textit{Restart}. 
 	
 	\begin{itemize}
 	\item \textbf{Start}\\
@@ -86,37 +95,31 @@ Do obsługi aplikacji wystarczy myszka, która umożliwia interakcję z interfej
 	\item \textbf{Restart}\\
 	Kończy symulację. Usuwa wszystkich agentów, po uruchomieniu symulacji agenci zostaną stworzeni na nowo wraz ze zaktualizowanymi parametrami.
 	\end{itemize}
+
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{beforeSim.png}
+		\caption{Ekran początkowy aplikacji.}
+		\label{fig:beforeSim}
+	\end{figure}
 	
 	\item \textbf{Zakończenie symulacji}\\
 	Użytkownik może zakończyć symulację w każdej chwili klikając w przycisk \textit{Restart}. W przeciwnym przypadku symulacja zakończy się automatycznie po ustawionym na początku czasie jej trwania oraz zostanie wyświetlony ekran z podsumowaniem widoczny na rysunku \ref{fig:endSim}.
 	
 	\item \textbf{Statystyki symulacji}\\
 	Podczas trwania symulacji możliwe jest bieżące monitorowanie jej statystyk, co widać na rysunku \ref{fig:beforeSim} przy numerze trzecim. Są to: liczba osób narażonych, liczba zarażonych, aktualny czas w środowisku symulacyjnym oraz rzeczywisty czas od rozpoczęcia.
+	
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{runningSimwithNumbers.png}
+		\caption{Ekran podczas działającej symulacji: 1. Suwaki do ustawiania parametrów, 2. Przyciski kontrolujące 3. Aktualne statystyki i czas, 4. Wizualizacja}
+		\label{fig:runningSim}
+	\end{figure}
+	
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{endSim.png}
+		\caption{Ekran zakończenia symulacji}
+		\label{fig:endSim}
+	\end{figure}
 \end{itemize}
-
-\begin{figure}[h!]
-	\includegraphics[width=\linewidth]{beforeSim.png}
-	\caption{Ekran początkowy aplikacji.}
-	\label{fig:beforeSim}
-\end{figure}
-
-\begin{figure}[h!]
-	\includegraphics[width=\linewidth]{runningSimwithNumbers.png}
-	\caption{Ekran podczas działającej symulacji: 1. Suwaki do ustawiania parametrów, 2. Przyciski kontrolujące 3. Aktualne statystyki i czas, 4. Wizualizacja}
-	\label{fig:runningSim}
-\end{figure}
-
-\begin{figure}[h!]
-	\includegraphics[width=\linewidth]{endSim.png}
-	\caption{Ekran zakończenia symulacji}
-	\label{fig:endSim}
-\end{figure}
-
-\begin{figure}[h!]
-	\includegraphics[width=\linewidth]{mapWithNumbers.png}
-	\caption{Mapa biura: 1. Biurka do pracy, 2. Kuchnia ze stolikami, 3. Miejsce wypoczynku}
-	\label{fig:simMap}
-\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%
