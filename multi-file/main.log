@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  8 JAN 2024 22:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.25)  10 JAN 2024 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1857,7 +1857,7 @@ Rozdzia\l  3.
 <mapWithNumbers.png, id=407, 522.15076pt x 333.04425pt>
 File: mapWithNumbers.png Graphic file (type png)
 <use mapWithNumbers.png>
-Package pdftex.def Info: mapWithNumbers.png  used on input line 38.
+Package pdftex.def Info: mapWithNumbers.png  used on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 290.38138pt.
 
 
@@ -1869,7 +1869,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20 <./mapWithNumbers.png (PNG copy)>]
-Overfull \hbox (7.64143pt too wide) in paragraph at lines 95--97
+Overfull \hbox (7.64143pt too wide) in paragraph at lines 93--95
 \T1/lmr/m/n/12 Ko«czy sy-mu-la-cj¦. Usuwa wszyst-kich agen-tów, po uru-cho-mie-
 niu sy-mu-la-cji agenci
  []
@@ -1877,7 +1877,7 @@ niu sy-mu-la-cji agenci
 <beforeSim.png, id=416, 925.65825pt x 454.69875pt>
 File: beforeSim.png Graphic file (type png)
 <use beforeSim.png>
-Package pdftex.def Info: beforeSim.png  used on input line 100.
+Package pdftex.def Info: beforeSim.png  used on input line 98.
 (pdftex.def)             Requested size: 455.24411pt x 223.62997pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1894,7 +1894,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <runningSimwithNumbers.png, id=423, 1536.74126pt x 748.7975pt>
 File: runningSimwithNumbers.png Graphic file (type png)
 <use runningSimwithNumbers.png>
-Package pdftex.def Info: runningSimwithNumbers.png  used on input line 112.
+Package pdftex.def Info: runningSimwithNumbers.png  used on input line 110.
 (pdftex.def)             Requested size: 455.24411pt x 221.81883pt.
 
 
@@ -1903,7 +1903,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <endSim.png, id=424, 1154.06157pt x 567.62062pt>
 File: endSim.png Graphic file (type png)
 <use endSim.png>
-Package pdftex.def Info: endSim.png  used on input line 118.
+Package pdftex.def Info: endSim.png  used on input line 116.
 (pdftex.def)             Requested size: 455.24411pt x 223.90886pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1939,6 +1939,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Rozdzia\l  4.
+
+Overfull \hbox (3.89995pt too wide) in paragraph at lines 44--45
+[]\T1/lmr/m/n/12 Obsªuguje przy-ci-ski kon-troli, ta-kie jak \T1/lmr/m/it/12 St
+art\T1/lmr/m/n/12 , \T1/lmr/m/it/12 Pauza\T1/lmr/m/n/12 , \T1/lmr/m/it/12 Re-st
+art\T1/lmr/m/n/12 , co za-pew-nia pªynn¡
+ []
+
 [25]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2163,10 +2170,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45399 strings out of 475247
- 1003919 string characters out of 5755431
+ 45398 strings out of 475247
+ 1003910 string characters out of 5755431
  2099785 words of memory out of 5000000
- 65937 multiletter control sequences out of 15000+600000
+ 65936 multiletter control sequences out of 15000+600000
  628792 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,14n,92p,1954b,3254s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2186,7 +2193,7 @@ Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Kubotronic/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Kubotro
 nic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Kub
 otronic/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (57 pages, 3026516 bytes).
+Output written on main.pdf (57 pages, 3026324 bytes).
 PDF statistics:
  853 PDF objects out of 1000 (max. 8388607)
  245 named destinations out of 1000 (max. 500000)

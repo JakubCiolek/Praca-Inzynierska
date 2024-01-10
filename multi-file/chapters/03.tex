@@ -10,13 +10,13 @@ Rozdział omawia kluczowe aspekty dotyczące aplikacji do symulowania rozprzestr
 
 \section{\textbf{Wymagania funkcjonalne i niefunkcjonalne}}
 
-Skoncentrowano się na opracowaniu symulacji, ze szczególnym naciskiem na środowisko budynków. Taka decyzja wynika z faktu, że ludzie spędzają większość swojego czasu w budynkach, a duże zagęszczenie populacji w takich miejscach stwarza optymalne warunki dla rozprzestrzeniania się chorób.
+Skoncentrowano się na opracowaniu symulacji, ze szczególnym naciskiem na środowisko wewnątrz budynków. Taka decyzja wynika z faktu, że ludzie spędzają większość swojego czasu w budynkach, a duże zagęszczenie populacji w takich miejscach stwarza optymalne warunki dla rozprzestrzeniania się chorób.
 
 \subsection{\textbf{Wymagania funkcjonalne}}
 \begin{itemize}
 	\item \textbf{ Symulacja ruchu i interakcji:}
 	
-	Aplikacja pozwala na śledzenie trajektorii ruchu każdej postaci w biurze w czasie rzeczywistym.
+	Aplikacja pozwala na śledzenie ruchu każdej postaci w biurze w czasie rzeczywistym.
 	Interakcje pomiędzy postaciami są symulowane z uwzględnieniem różnych scenariuszy, takich jak rozmowy, wspólna praca, czy przerwy.
 	W momencie, gdy jedna postać zostaje zarażona, aplikacja monitoruje, czy i jak szybko choroba rozprzestrzenia się na inne postacie poprzez ich bezpośrednie kontakty.
 	\item \textbf{Wizualizacja stanów zdrowia:}
@@ -60,7 +60,7 @@ Skoncentrowano się na opracowaniu symulacji, ze szczególnym naciskiem na środ
 		Określenie procentowej liczby zarażonych w początkowej populacji.
 		\item \textbf{Odporność populacji:}
 		
-		Ustalenie procenta populacji posiadającego naturalną odporność na wirusa.
+		Ustalenie procentowej naturalnej odporność na wirusa.
 		\item \textbf{Długość Symulacji:}
 		
 		Określenie czasu trwania symulacji w jednostkach czasu.
@@ -154,13 +154,13 @@ W ramach symulacji zachowań ludzkich w aplikacji, agenci mają zdefiniowane kon
 \begin{itemize}
 	\item \textbf{Początkowe losowanie:}
 	\begin{itemize}
-		\item Kiedy agent pojawiając się w symulacji, losuje jedną z czterech podstawowych akcji: losowe spacerowanie, praca, przerwa lub lunch.
+		\item Agent pojawiając się w symulacji, losuje jedną z czterech podstawowych akcji:\textit{ losowe spacerowanie, praca, przerwa} lub \textit{lunch}.
 		\item Każda akcja(oprócz losowego spacerowania) trwa od 1 do 4 godzin.
 	\end{itemize}
 	
 	\item \textbf{Zmiana akcji:}
 	\begin{itemize}
-		\item Po zakończeniu aktualnej akcji, agent wybiera nową spośród losowego spacerowania, pracy, przerwy lub lunchu.
+		\item Po zakończeniu aktualnej akcji, agent wybiera nową spośród \textit{ losowego spacerowania, pracy, przerwy} lub \textit{lunchu}.
 		\item Ten proces powtarza się, co pozwala agentowi na cykliczne zmiany działań.
 	\end{itemize}
 	
@@ -174,7 +174,7 @@ W ramach symulacji zachowań ludzkich w aplikacji, agenci mają zdefiniowane kon
 	\begin{itemize}
 		\item Jeśli agent zdecyduje się pracować, odpoczywać lub coś zjeść sprawdza dostępność odpowiednio biurek, miejsc na kanapie, stolików w kuchni.
 		\item Siada przy pierwszym wolnym miejscu i wykonuje czynność od 1 do 4 godzin, po czym wybiera nową akcję.
-		\item W przypadku braku wolnych miejsc agent rozpoczyna losowe spacerowanie.
+		\item W przypadku braku wolnych miejsc agent rozpoczyna \textit{ losowe spacerowanie}.
 	\end{itemize}
 \end{itemize}
 
